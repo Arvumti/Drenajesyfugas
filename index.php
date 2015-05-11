@@ -76,7 +76,7 @@ session_start();
         	<div class="row">
             	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                	<center>
-                		<h1>Somos <span class="color-texto-resaltar texto-azul">Especialistas en</span> todos los servicios relacionados con drenajes y fugas</h1>
+                		<h1>Somos <span class="color-texto-resaltar texto-azul">Especialistas</span> en todos los servicios relacionados con drenajes y fugas</h1>
                 		
                       <br><br>  
                  	</center>

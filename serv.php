@@ -1,19 +1,63 @@
 <div class="row borde_servicio">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="caja_servicios">
-            <div class="caja_icono">
-                <img src="img/tubo.png">
-            </div>
-            <div class="sc_contenido">
-                <h2>DRENAJE</h2>
-                <p >Limpieza de tuberías de drenaje industrial y municipal (pluvial, sanitario y de proceso), así como succión de los sedimentos alojados al interior de las mismas.
+
+<div class="sservicio_items">
+                   <h1 style="text-align:center; margin-top:2em;">¡No contrate plomeros, contrate especializtas!</h1>
+				   <p >Limpieza de tuberías de drenaje industrial y municipal (pluvial, sanitario y de proceso), así como succión de los sedimentos alojados al interior de las mismas.
 
                 Evacuación de todo tipo de sedimentos o residuos en cárcamos, fosas, trampas de grasa, celdas de cimentación, tanques de tormenta, pozos de absorción, plantas de tratamiento y cualquier punto de colecta.
 
                 Lavado y desinfección de cisternas, tinacos y todo tipo de contenedores.</p>
-            </div>
-        </div>
-    </div>
+                </div>
+				
+<div class="col-lg-3 col-md-3 col-sm-6">
+               	<div class="caja_servicios icono_sencillo">
+                      <div class="caja_icono">
+                        <img src="img/tubo.png">
+                  	</div>
+                      <div class="sc_contenido">
+                        <h3>Drenaje</h3>
+                      </div>
+                 </div>
+          		</div>
+                
+                
+              <div class="col-lg-3 col-md-3 col-sm-6">
+               	<div class="caja_servicios icono_sencillo">
+                      <div class="caja_icono">
+                        <img src="img/llave1.png">
+                  	</div>
+                      <div class="sc_contenido">
+                        <h3>Tubería de Agua</h3>
+                      </div>
+                 </div>
+          		</div>
+                
+                
+                
+              <div class="col-lg-3 col-md-3 col-sm-6">
+               	<div class="caja_servicios icono_sencillo">
+                      <div class="caja_icono">
+                        <img src="img/llave2.png">
+                  	</div>
+                      <div class="sc_contenido">
+                        <h3>Tubería de Gas</h3>
+                      </div>
+                 </div>
+          		</div>
+                
+                
+              <div class="col-lg-3 col-md-3 col-sm-6">
+               	<div class="caja_servicios icono_sencillo">
+                      <div class="caja_icono">
+                        <img src="img/cinta.png">
+                  	</div>
+                      <div class="sc_contenido">
+                        <h3>Espacios confinados</h3>
+                      </div>
+                 </div>
+          		</div>
+				
+				
     
    
                   
@@ -21,9 +65,7 @@
                                
         
             
-                <div class="sservicio_items">
-                   <h1 style="text-align:center; margin-top:2em;">¡No contrate plomeros, contrate especializtas!</h1>
-                </div>
+                
                              
           
              <div class="port-wrap port-4col">
