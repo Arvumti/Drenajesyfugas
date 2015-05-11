@@ -1,0 +1,462 @@
+@media only screen and (min-width: 1024px) and (max-width: 1399px) {
+	.masonry-blog .s-post,
+	.masonry-blog.large-post .s-post {
+		width:31%;
+		}
+	.port-5col .port-item {
+		width:25%;
+		}
+			
+	}
+	
+@media only screen and (min-width: 980px) and (max-width: 1023px) {
+	.masonry-blog .s-post,
+	.masonry-blog.large-post .s-post {
+		width:33%;
+		}
+	.iso-pro-list.fivecol .item,
+	.iso-pro-list.fourcol .item {
+		width:24.9%;
+	}	
+	}
+@media only screen and (max-width: 980px) {
+	.dl-menuwrapper{
+		display:block;
+		position:absolute;
+		top:0;
+		right:0;
+	}
+	.s4-header {
+		top:6.5em;
+		}
+	.vertical-header .logo {
+		text-align:left;
+		padding-top:5px;
+		}
+	.vertical-header header .push-area,
+	.vertical-header.h-right header .push-area {
+		display:none;
+		}
+	.vertical-header .contenedor_navegacion {
+		left:0;
+		right:0;
+		width:100%;
+		background:#fff;
+		height:66px;
+		border-bottom: 1px solid #ececec;
+		box-shadow:0 3px 2px 0 rgba(0,0,0,.03);
+		min-height:67px;
+		}
+	
+	.vertical-header.h-right .contenedor_navegacion {
+		right:0;
+		}	 	
+	.vertical-header .logo {
+		margin:5px 10px;
+
+		}	
+	.vertical-header .main-container,
+	.vertical-header.h-right .main-container {
+		padding:0;
+		}		
+		
+	.menu_principal {
+		display:none;
+	}
+	.marco_principal {
+		overflow:hidden;
+	}
+	
+	.barra_superior .container .t-izquierdo {
+		display:none;
+	}
+	#error404 {
+	padding:50px 0;
+	}
+	.iso-pro-list.fivecol .item,
+	.iso-pro-list.fourcol .item {
+		width:32.9%;
+	}
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+	.all-products li {
+		width:50%;
+		}
+	.post .entrada_meta .button-group a.liked {
+		margin:10px 0 0 0;
+		}
+	.masonry-blog .s-post,
+	.masonry-blog.large-post .s-post {
+		width:49%;
+		}
+	.port-5col .port-item {
+		width:25%;
+		}
+	.iso-pro-list.fivecol .item,
+	.iso-pro-list.fourcol .item {
+		width:32.9%;
+	}	
+	header .logo  {
+		width: 40%;
+		}	
+
+		
+}
+@media only screen and (max-width: 767px) {
+	.copyright div > div.col-sm-12 {
+		text-align:center;
+		line-height:20px;
+		}	
+	.copyright div > div.col-sm-12 .redes_sociales {
+		float:none !important;
+		margin:20px 0;
+		text-align:center;
+		}
+	.all-products li {
+		width:50%;
+		}
+	.post .entrada_meta .button-group a.liked {
+		margin:10px 0 0 0;
+		}
+	.post-content .img-post {
+		max-width:50%;
+		}	
+	header .logo  {
+		width: 40%;
+		}		
+	.galeria_sencilla img{
+		height: auto;
+	}	
+	}
+@media only screen and (max-width: 639px) {
+	.about-info .container > div {
+		width:50%;
+		}
+	.iso-pro-list.fivecol .item,
+	.iso-pro-list.fourcol .item ,
+	.iso-pro-list.threecol .item {
+		width:49.9%;
+	}
+	.home-4 .port-filter {
+		width:100%;
+		position:relative;
+		padding-top:80px;
+		}
+	.home-4 .h4-portfolio {
+		padding:0;
+		}
+	.vid_servicio iframe{
+			width: 85%;
+		}		
+	}
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+	#onepage-1 .newsletter {
+		text-align:center;
+		}
+	#onepage-1 .newsletter i {
+		float:none;
+		margin-bottom:20px;
+		text-align:center;
+		}
+	#onepage-1 .newsletter .info-form {
+		width:100%;
+		display:block;
+		text-align:center;
+		}
+	#onepage-1 .newsletter .info-form input,
+	#onepage-1 .newsletter .info-form button {
+		width:100%;
+		display:block;
+		margin-top:10px;
+		}
+	#onepage-1 .newsletter .info-form input {
+		margin-top:0;
+		}	
+	
+	.vid_servicio iframe{
+			width: 85%;
+		}		
+}
+@media only screen and (min-width: 568px) and (max-width: 639px) {
+	.post .entrada_meta .button-group a.liked {
+		margin:0 10px 0 0;
+		}
+	.port-3col .port-item,
+	.port-4col .port-item,
+	.port-5col .port-item {
+		width:50%;
+		}
+	.h1-main ul {
+		min-height:80px;
+		}	
+	.h1-main ul li {
+		font-size:30px;
+		line-height:35px;
+		}
+	.vid_servicio iframe{
+			width: 85%;
+		}		
+}	
+}
+@media only screen and  (max-width: 500px) {
+	.vid_servicio{
+		width: 400px;
+	}
+
+}
+@media only screen and (min-width: 480px) and (max-width: 567px) {
+	.port-3col .port-item,
+	.port-4col .port-item,
+	.port-5col .port-item {
+		width:50%;
+		}
+	.h2-intro .grid-layout.three-col li,
+	.grid-layout.three-col li,
+	.grid-layout.four-col li,
+	.grid-layout li {
+		width:50%;
+		}
+	.text-heading.bold h1 {
+		font-size:20px;
+		}
+	#onepage-1 #home .middle-content h1 {
+		font-size:30px;
+		line-height:normal;
+		margin-top:0;
+		}
+	#onepage-1 #home .middle-content h3	{
+		font-size:20px;
+		line-height:normal;
+		}
+	.h1-main ul {
+		min-height:80px;
+		}	
+	.h1-main ul li {
+		font-size:30px;
+		line-height:35px;
+		}
+	.btn-start {
+		bottom:5px;
+		}
+	.h3-intro h1 {
+		font-size:22px;
+		line-height:24px;
+		}	
+	.vid_servicio iframe{
+			width: 85%;
+		}		
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+	#error404 h2 {
+		font-size:25px;
+		}
+	#error404 h1 {
+		font-size:35px;
+		}
+	.about-info .container > div {
+		width:100%;
+		}
+	.contact-wrap .input-block {
+		width:100%;
+		}
+	h1 {
+		font-size: 25px;
+		line-height: 28px;
+		}
+	h2 {
+		line-height:30px;
+		}	
+	.text-heading span {
+		max-width:90%;
+		}
+	.all-products li {
+		width:100%;
+		}
+	.header_pagina h1 {
+		font-size:30px;
+		}
+	.summary .cart .btn {
+		padding:0 10px;
+		}
+	.post .entrada_meta .button-group a.liked {
+		margin:10px 0 0 0;
+		}
+	.post-meta-infos li {
+		padding:5px 0;
+		}	
+	.post-content .img-post {
+		max-width:50%;
+		}
+	.comment_container .avatar {
+		display:none;
+		}
+	.comment-text {
+		margin-left:0;
+		}
+	.comment-text:after {
+		border:none;
+		background:none;
+		}
+	.commentlist li button {
+    	margin: 0 0 0 -85px;
+		}
+	.commentlist li ul {
+		margin-left:30px;
+		}
+	.port-3col .port-item,
+	.port-4col .port-item,
+	.port-5col .port-item {
+		width:100%;
+		}
+	.man-portfolio .item.item-w2 {
+		width:100px;
+		}	
+	.h2-intro .grid-layout.three-col li,
+	.grid-layout.three-col li,
+	.grid-layout.four-col li,
+	.grid-layout li {
+		width:100%;
+		}
+	.iso-pro-list.fivecol .item,
+	.iso-pro-list.fourcol .item,
+	.iso-pro-list.threecol .item {
+		width:100%;
+	}
+	.man-portfolio .item {
+		box-sizing:border-box;
+		width:100% !important;
+		height:auto !important;
+		margin:0 2px 2px 0 !important;
+		}
+	.post-carousel .entrada_texto p:first-child {
+		display:none;
+		}
+	.text-heading.bold h1 {
+		font-size:20px;
+		}
+	#onepage-1 #home .middle-content h1 {
+		font-size:30px;
+		line-height:normal;
+		margin-top:0;
+		}
+	#onepage-1 #home .middle-content h3	{
+		font-size:20px;
+		line-height:normal;
+		}
+	.h1-main ul {
+		min-height:80px;
+		}	
+	.h1-main ul li {
+		font-size:30px;
+		line-height:35px;
+		}
+	.btn-start {
+		display:none;
+		}			
+	.h3-intro h1 {
+		font-size:22px;
+		line-height:24px;
+		}	
+	.vid_servicio iframe{
+			width: 100%;
+		}		
+}
+@media only screen and (min-width: 240px) and (max-width: 319px) {
+	.barra_superior {
+		display:none;
+	}
+	#error404 h2 {
+		font-size:15px;
+	}
+	.about-info .container > div {
+		width:100%;
+		}
+	.contact-wrap .input-block {
+		width:100%;
+		}
+	.text-heading span {
+		max-width:90%;
+		}
+	.all-products li {
+		width:100%;
+		}
+	.summary .cart .btn {
+		padding:0 10px;
+		}
+	.post .entrada_meta .button-group a.liked {
+		margin:10px 0 0 0;
+		}
+	.entrada_meta ul {
+		display:none;
+		}
+	.post-content .img-post {
+		max-width:100%;
+		}
+	.comment_container .avatar {
+		display:none;
+		}
+	.comment-text {
+		margin-left:0;
+		}
+	.comment-text:after {
+		border:none;
+		background:none;
+		}
+	.commentlist li button {
+    	margin: 0 0 0 -85px;
+		}									
+	.commentlist li ul {
+		margin-left:30px;
+		}
+	.header_pagina h1 {
+		font-size:30px;
+		line-height:25px;
+		}
+	.port-3col .port-item,
+	.port-4col .port-item,
+	.port-5col .port-item {
+		width:100%;
+		}			
+	.grid-layout.three-col li {
+		width:100%;
+		}
+	.h2-intro .grid-layout.three-col li,
+	.grid-layout.three-col li,
+	.grid-layout.four-col li,
+	.grid-layout li {
+		width:100%;
+		}
+	.text-heading.bold h1 {
+		font-size:20px;
+		}
+	#onepage-1 #home .middle-content h1 {
+		font-size:30px;
+		line-height:normal;
+		margin-top:0;
+		}
+	#onepage-1 #home .middle-content h3	{
+		font-size:20px;
+		line-height:normal;
+		}
+	.h1-main ul {
+		min-height:80px;
+		}	
+	.h1-main ul li {
+		font-size:30px;
+		line-height:35px;
+		}
+	.btn-start {
+		display:none;
+		}
+	.h3-intro h1 {
+		font-size:22px;
+		line-height:24px;
+		}		
+	.vid_servicio iframe{
+			width: 85%;
+		}		
+}					
+}
+

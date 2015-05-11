@@ -1,0 +1,91 @@
+/* 
+ * 0.-Misc
+ *  0.1.-Import - Reset
+ *  0.2.-Variables
+ *  0.3.-Funciones
+ * 1.-Principal
+ * 2.-Login
+ * 20.-Global
+ * 21.-Custom
+ * 22.-MediaQueries
+ */
+
+/*------------------------- 0.-Misc --------------------*/  
+/*------------------------- 0.1.-Import - Reset --------------------*/
+@import 'nib'
+/*@import url('http://fonts.googleapis.com/css?family=Quicksand')*/
+/*global-reset()*/
+
+/*------------------------- 0.2.-Variables --------------------*/
+main-color = #4D2811 !important
+sub-main-color = #FAB852 !important
+
+/*------------------------- 0.3.-Funciones --------------------*/
+bcolor(t = 0.1, r = 59, g = 89, b = 152)
+  background-color rgba(r, g, b, t) !important
+borde(color = #F00)
+  border 1px solid color !important
+t-sombra(color = #222)
+  text-shadow 2px 2px 1px color
+sombra(color = #222)
+  box-shadow 3px 3px 10px color
+
+/*------------------------- 1.-Principal --------------------*/
+body, html
+    font-size 16px
+    height 100%
+    width 100%
+    
+.loading
+    background-color rgba(30, 30, 30, 0.5)
+    height:100%;
+    left 0
+    margin:0;
+    position absolute
+    top:0;
+    width:100%;
+    z-index 9999
+
+.loading #topLoader
+    left 44%
+    position:absolute;
+    top 10%
+
+/*------------------------- 20.-Global --------------------*/
+#print-area
+    display none
+/*------------------------- 21.-Custom --------------------*/
+.isHidden
+    display none
+.tt-dropdown-menu
+    margin-top -10px
+.twitter-typeahead
+    display block
+    width 100%
+/*------------------------- 22.-MediaQueries --------------------*/
+@media print
+    body, html
+        margin 0 !important
+        padding 0 !important
+        -webkit-print-color-adjust exact
+        
+    header, main, .reveal-modal
+        display none !important
+        
+    #print-area
+        display block
+    
+    .rp-contrato
+        border none
+        height 1495px
+        margin 0 auto
+        padding 0
+        width 1050px
+        
+        .header
+            .folio
+                label
+                    background-color #333 !important
+                    color #EEE !important
+                    display block
+                    padding 0.2em
