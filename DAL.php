@@ -26,7 +26,7 @@ function GetInfoAdmin($options, $data) {
 			$consulta = '   SELECT  idReporte, idCliente, responsable, atendio, email,
 									CASE tipo WHEN 1 THEN \'Mantenimiento\' WHEN 2 THEN \'Garantia\' ELSE \'Nuevo servicio\' END tipo, 
 									areas, factura, 
-									fechaIni, fechaFin, observaciones, sugerencias, pumbometro, video, hora
+									fechaIni, fechaFin, observaciones, sugerencias, pumbometro, video
 							FROM reportes
 							WHERE idCliente = "'.$data['idCliente'].'"
 							'.$and; 

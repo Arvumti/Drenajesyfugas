@@ -56,25 +56,25 @@ if(isset($idCliente) && isset($idReporte)) {
 
 		switch ($reporte[$i]['pumbometro']) {
 			case 1:
-				$pumbometro = ' <p>Pumbómetro:<i class="icon-thermometer green"></i> </p>';
+				$pumbometro = ' <p>Plumbómetro:<i class="icon-thermometer green"></i> </p>';
 				break;
 			case 2:
-				$pumbometro = ' <p>Pumbómetro:<i class="icon-thermometer yellow"></i> </p>';
+				$pumbometro = ' <p>Plumbómetro:<i class="icon-thermometer yellow"></i> </p>';
 				break;
 			default:
-				$pumbometro = ' <p>Pumbómetro:<i class="icon-thermometer red"></i> </p>';
+				$pumbometro = ' <p>Plumbómetro:<i class="icon-thermometer red"></i> </p>';
 				break;
 		}
 
-	  	$reporte_html .= '<p>Folio: '.$reporte[$i]['idReporte'].'</p>
-	  					  <p>Tipo de servicio: '.$reporte[$i]['tipo'].'</p>
-	  					  <p>Fecha inicio: '.$reporte[$i]['fechaIni'].'</p>
-	  					  <p>Fecha termino: '.$reporte[$i]['fechaFin'].'</p>
-	  					  <p>Atendió: '.$reporte[$i]['atendio'].'</p>
-	  					  <p>Responsable: '.$reporte[$i]['responsable'].'</p>
-	  					  <p>Áreas: '.$reporte[$i]['areas'].'</p>
-	  					  <p>Observaciones: '.$reporte[$i]['observaciones'].'</p>
-	  					  <p>Sugerencias: '.$reporte[$i]['sugerencias'].'</p>'.
+	  	$reporte_html .= '<p><b>Folio: </b>'.$reporte[$i]['idReporte'].'</p>
+	  					  <p><b>Tipo de servicio: </b>'.$reporte[$i]['tipo'].'</p>
+	  					  <p><b>Fecha: </b>'.$reporte[$i]['fechaIni'].'</p>
+	  					  <p><b>Hora: </b>'.$reporte[$i]['hora'].'</p>
+	  					  <p><b>Atendió: </b>'.$reporte[$i]['atendio'].'</p>
+	  					  <p><b>Responsable: </b>'.$reporte[$i]['responsable'].'</p>
+	  					  <p><b>Áreas: </b>'.$reporte[$i]['areas'].'</p>
+	  					  <p><b>Observaciones: </b>'.$reporte[$i]['observaciones'].'</p>
+	  					  <p><b>Sugerencias: </b>'.$reporte[$i]['sugerencias'].'</p>'.
 	  					  $pumbometro.
 	  					  $imagenes_html.
 	  					  $video;
