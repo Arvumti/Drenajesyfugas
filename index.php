@@ -72,7 +72,7 @@ session_start();
       </div>
     </section> 
      <section class="h3-intro">
-    	<div class="container">
+    	<div class="container borde_servicio">
         	<div class="row">
             	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                	<center>
@@ -138,80 +138,6 @@ session_start();
                       
        	</div>
     </section>
-       <div class="lista_servicio nav-inside">
-        <div class="sservicio_items">
-            <div class="p-item">
-                <div class="pthumb">
-                    <span class="triangle"></span>
-                    <div class="mascara">
-                        <a href="img/servicios/1.png" class="prettyPhoto"><i class="fa fa-search zoom"></i></a>
-                        <span class="glass"></span>   
-                    </div>
-                    <img src="img/servicios/1.png">
-                </div>
-            </div>
-        </div>
-        <div class="sservicio_items">
-            <div class="p-item">
-                <div class="pthumb">
-                    <span class="triangle"></span>
-                    <div class="mascara">
-                        <a href="img/servicios/2.png" class="prettyPhoto"><i class="fa fa-search zoom"></i></a>
-                        <span class="glass"></span>   
-                    </div>
-                    <img src="img/servicios/2.png">
-                </div>
-            </div>
-        </div>                
-        <div class="sservicio_items">
-            <div class="p-item">
-                <div class="pthumb">
-                    <div class="mascara">
-                        <a href="img/servicios/3.png" class="prettyPhoto"><i class="fa fa-search zoom"></i></a>
-                        <span class="glass"></span>   
-                    </div>
-                    <img src="img/servicios/3.png">
-                </div>
-                        </div>
-                </div>
-                               
-                <div class="sservicio_items">
-                    <div class="p-item">
-                        <div class="pthumb">
-                            <div class="mascara">
-                                <a href="img/servicios/4.png" class="prettyPhoto"><i class="fa fa-search zoom"></i></a>
-                                <span class="glass"></span>   
-                            </div>
-                                <img src="img/servicios/4.png">
-                        </div>
-                        </div>
-                </div>
-                         
-                <div class="sservicio_items">
-                    <div class="p-item">
-                        <div class="pthumb">
-                            <div class="mascara">
-                                <a href="img/servicios/5.png" class="prettyPhoto"><i class="fa fa-search zoom"></i></a>
-                                <span class="glass"></span>   
-                            </div>
-                                <img src="img/servicios/5.png">
-                        </div>
-                        </div>
-                </div>
-                              
-                <div class="sservicio_items">
-                    <div class="p-item">
-                        <div class="pthumb">
-                            <div class="mascara">
-                                <a href="img/servicios/6.png" class="prettyPhoto"><i class="fa fa-search zoom"></i></a>
-                                <span class="glass"></span>   
-                            </div>
-                                <img src="img/servicios/6.png">
-                        </div>
-                        </div>
-                </div>
-                             
-            </div>
     
     
     <section class="index_opciones">
