@@ -4,7 +4,6 @@
                    <h1 style="text-align:center; margin-top:2em;">¡No contrate plomeros, contrate especializtas!</h1>
 				   
                 </div>
-				</div> 
 				<div class="row">
 				<p >Limpieza de tuberías de drenaje industrial y municipal (pluvial, sanitario y de proceso), así como succión de los sedimentos alojados al interior de las mismas.
 
