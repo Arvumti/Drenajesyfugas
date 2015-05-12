@@ -182,7 +182,7 @@ if(isset($idCliente) && isset($idReporte)) {
 						</div>
 					</div>
 				</div>
-				<div class="row borde_servicio">
+				<div class="row">
 					<?php echo $reporte_html; ?>
 				</div>
 			</div>

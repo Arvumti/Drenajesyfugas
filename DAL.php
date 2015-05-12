@@ -60,7 +60,7 @@ function GetInfo($options, $data) {
 		case 1://Obtiene la informacion de los reportes
 			$consulta = '   SELECT  a.idReporte, a.idReporte folio, a.idCliente, a.responsable, a.atendio, a.tipo, a.areas, a.factura, 
 											a.fechaIni, a.fechaFin, a.observaciones, a.sugerencias, a.pumbometro, a.video, a.email,
-											b.nombre cliente
+											b.nombre cliente, a.hora
 							FROM reportes a
 							LEFT JOIN clientes b
 							ON a.idCliente = b.idCliente'; 
