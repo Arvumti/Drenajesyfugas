@@ -29,7 +29,7 @@ if (isset($_POST['usuario'], $_POST['password'])) {
     <div class="container">
     	<div class="row">
         	<div class="t-izquierdo col-sm-6 clearfix">
-           	<span>	<i class="fa fa-envelope"></i> <a href="mailto:hola@drenajes.com">info@drenajesyfugas.com</a></span> 
+           	<span>	<i class="fa fa-envelope"></i> <a href="mailto:info@drenajesyfugas.com">info@drenajesyfugas.com</a></span> 
            	<span>	<i class="fa fa-phone"></i> (81) 8372-0322 / 8374-0919</span> 
            </div>
            <div class="t-derecho col-sm-6 clearfix">
