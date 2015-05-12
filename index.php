@@ -73,7 +73,7 @@ session_start();
     </section> 
      <section class="h3-intro">
     	<div class="container">
-        	<div class="row borde_servicio">
+        	<div class="row ">
             	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                	<center>
                 		<h1>Somos <span class="color-texto-resaltar texto-azul">Especialistas</span> en todos los servicios relacionados con drenajes y fugas</h1>
@@ -84,7 +84,7 @@ session_start();
                </div>
           	</div>
             
-           <div class="row borde_servicio">
+           <div class="row ">
             	
             	<div class="col-lg-3 col-md-3 col-sm-6">
                	<div class="caja_servicios icono_sencillo">
@@ -93,6 +93,7 @@ session_start();
                   	</div>
                       <div class="sc_contenido">
                         <h3>Drenaje</h3>
+                        <p style="color:white">Drenaje</p>
                       </div>
                  </div>
           		</div>
@@ -105,6 +106,7 @@ session_start();
                   	</div>
                       <div class="sc_contenido">
                         <h3>Tubería de Agua</h3>
+                         <p style="color:white">Tubería de agua</p>
                       </div>
                  </div>
           		</div>
@@ -118,6 +120,7 @@ session_start();
                   	</div>
                       <div class="sc_contenido">
                         <h3>Tubería de Gas</h3>
+                         <p style="color:white">Tubería de gas</p>
                       </div>
                  </div>
           		</div>
@@ -130,6 +133,7 @@ session_start();
                   	</div>
                       <div class="sc_contenido">
                         <h3>Espacios confinados</h3>
+                         <p style="color:white">Espacios confinados</p>
                       </div>
                  </div>
           		</div>

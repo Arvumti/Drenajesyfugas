@@ -1,7 +1,7 @@
 <div class="row">
 
-<div class="sservicio_items">
-                   <h1 style="text-align:center; margin-top:2em;">¡No contrate plomeros, contrate especializtas!</h1>
+<div class="sservicio_items" style="margin-bottom:4em;">
+                   <h1 style="text-align:center; margin-top:2em;">¡No contrate plomeros, contrate especialistas!</h1>
 				   
                 </div>
 				
@@ -13,6 +13,7 @@
                   	</div>
                       <div class="sc_contenido">
                         <h3>Drenaje</h3>
+                         <p style="color:white">Drenaje</p>
                       </div>
                  </div>
           		</div>
@@ -25,6 +26,7 @@
                   	</div>
                       <div class="sc_contenido">
                         <h3>Tubería de Agua</h3>
+                        <p style="color:white">Tubería de agua</p>
                       </div>
                  </div>
           		</div>
@@ -38,6 +40,7 @@
                   	</div>
                       <div class="sc_contenido">
                         <h3>Tubería de Gas</h3>
+                            <p style="color:white">Tubería de gas</p>
                       </div>
                  </div>
           		</div>
@@ -50,14 +53,15 @@
                   	</div>
                       <div class="sc_contenido">
                         <h3>Espacios confinados</h3>
+                          <p style="color:white">Espacios confinados</p>
                       </div>
                  </div>
           		</div>
 				</div>
 				
     
-   <div class="row">
-				<p >Limpieza de tuberías de drenaje industrial y municipal (pluvial, sanitario y de proceso), así como succión de los sedimentos alojados al interior de las mismas.
+   <div class="row" style="margin-top:1em;">
+				<p style="font-size:16px">Limpieza de tuberías de drenaje industrial y municipal (pluvial, sanitario y de proceso), así como succión de los sedimentos alojados al interior de las mismas.
 
                 Evacuación de todo tipo de sedimentos o residuos en cárcamos, fosas, trampas de grasa, celdas de cimentación, tanques de tormenta, pozos de absorción, plantas de tratamiento y cualquier punto de colecta.
 
@@ -296,6 +300,8 @@
        
           
         </div>
+        </div>
+
              
 
                   </div>
