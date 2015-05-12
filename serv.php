@@ -60,7 +60,7 @@
 				</div>
 				
     
-   <div class="row" style="margin-top:1em;">
+   <div class="row">
 				<p style="font-size:16px">Limpieza de tuberías de drenaje industrial y municipal (pluvial, sanitario y de proceso), así como succión de los sedimentos alojados al interior de las mismas.
 
                 Evacuación de todo tipo de sedimentos o residuos en cárcamos, fosas, trampas de grasa, celdas de cimentación, tanques de tormenta, pozos de absorción, plantas de tratamiento y cualquier punto de colecta.
