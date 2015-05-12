@@ -66,15 +66,15 @@ if(isset($idCliente) && isset($idReporte)) {
 				break;
 		}
 
-	  	$reporte_html .= '<p><b>Folio: </b>'.$reporte[$i]['idReporte'].'</p>
-	  					  <p><b>Tipo de servicio: </b>'.$reporte[$i]['tipo'].'</p>
-	  					  <p><b>Fecha: </b>'.$reporte[$i]['fechaIni'].'</p>
-	  					  <p><b>Hora: </b>'.$reporte[$i]['hora'].'</p>
-	  					  <p><b>Atendió: </b>'.$reporte[$i]['atendio'].'</p>
-	  					  <p><b>Responsable: </b>'.$reporte[$i]['responsable'].'</p>
-	  					  <p><b>Áreas: </b>'.$reporte[$i]['areas'].'</p>
-	  					  <p><b>Observaciones: </b>'.$reporte[$i]['observaciones'].'</p>
-	  					  <p><b>Sugerencias: </b>'.$reporte[$i]['sugerencias'].'</p>'.
+	  	$reporte_html .= '<p>Folio: '.$reporte[$i]['idReporte'].'</p>
+	  					  <p>Tipo de servicio: '.$reporte[$i]['tipo'].'</p>
+	  					  <p>Fecha: '.$reporte[$i]['fechaIni'].'</p>
+	  					  <p>Hora: '.$reporte[$i]['hora'].'</p>
+	  					  <p>Atendió: '.$reporte[$i]['atendio'].'</p>
+	  					  <p>Responsable: '.$reporte[$i]['responsable'].'</p>
+	  					  <p>Áreas: '.$reporte[$i]['areas'].'</p>
+	  					  <p>Observaciones: '.$reporte[$i]['observaciones'].'</p>
+	  					  <p>Sugerencias: '.$reporte[$i]['sugerencias'].'</p>'.
 	  					  $pumbometro.
 	  					  $imagenes_html.
 	  					  $video;
