@@ -72,8 +72,8 @@ session_start();
       </div>
     </section> 
      <section class="h3-intro">
-    	<div class="container borde_servicio">
-        	<div class="row">
+    	<div class="container">
+        	<div class="row borde_servicio">
             	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                	<center>
                 		<h1>Somos <span class="color-texto-resaltar texto-azul">Especialistas</span> en todos los servicios relacionados con drenajes y fugas</h1>
@@ -84,7 +84,7 @@ session_start();
                </div>
           	</div>
             
-           <div class="row">
+           <div class="row borde_servicio">
             	
             	<div class="col-lg-3 col-md-3 col-sm-6">
                	<div class="caja_servicios icono_sencillo">

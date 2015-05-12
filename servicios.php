@@ -81,14 +81,10 @@ include('header.php');
                  ?>
 
     </div>
-      
    <?php 
    include('footer.php');
    ?>
-    <a href="#" class="back-to-top"> <i class="fa fa-angle-up"></i> </a>
 </div> 
-	
-
 	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/stellar.js"></script>
@@ -113,8 +109,5 @@ include('header.php');
     <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>             
 	<script type="text/javascript" src="js/retina.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>  
-    
-
-
 </body>
 </html>
