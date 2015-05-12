@@ -1,14 +1,17 @@
-<div class="row borde_servicio">
+<div class="row">
 
 <div class="sservicio_items">
                    <h1 style="text-align:center; margin-top:2em;">¡No contrate plomeros, contrate especializtas!</h1>
-				   <p >Limpieza de tuberías de drenaje industrial y municipal (pluvial, sanitario y de proceso), así como succión de los sedimentos alojados al interior de las mismas.
+				   
+                </div>
+				<div class="row">
+				<p >Limpieza de tuberías de drenaje industrial y municipal (pluvial, sanitario y de proceso), así como succión de los sedimentos alojados al interior de las mismas.
 
                 Evacuación de todo tipo de sedimentos o residuos en cárcamos, fosas, trampas de grasa, celdas de cimentación, tanques de tormenta, pozos de absorción, plantas de tratamiento y cualquier punto de colecta.
 
                 Lavado y desinfección de cisternas, tinacos y todo tipo de contenedores.</p>
-                </div>
-				
+				</div>
+				<div class="row">
 <div class="col-lg-3 col-md-3 col-sm-6">
                	<div class="caja_servicios icono_sencillo">
                       <div class="caja_icono">
@@ -56,7 +59,7 @@
                       </div>
                  </div>
           		</div>
-				
+				</div>
 				
     
    
@@ -67,7 +70,7 @@
             
                 
                              
-          
+          <div class="row">
              <div class="port-wrap port-4col">
         
         <div class="port-item ">
