@@ -95,10 +95,10 @@ session_start();
                   	</div>
                       <div class="sc_contenido">
                         <h3>Soluciones para drenajes</h3>
-                        <p>Brota agua por registros</p>
-						<p>Drenaje tapado</p>
-						<p>Malos olores</p>
 						<p>Contamos con todos los equipos necesarios para solucionar sus problemas de drenaje</p>
+                        <span>Brota agua por registros</span><br>
+						<span>Drenaje tapado</span><br>
+						<span>Malos olores</span>
                       </div>
                  </div>
           		</div>
@@ -111,9 +111,9 @@ session_start();
                   	</div>
                       <div class="sc_contenido">
                         <h3>Soluciones para fugas</h3>
-                         <p>Incremento en recibo mensual</p>
-						 <p>Manchas de humedad</p>
-						 <p>Medidor girando</p>
+                         <span>Incremento en recibo mensual</span><br>
+						 <span>Manchas de humedad</span><br>
+						 <span>Medidor girando</span>
 						 <p>Tenemos la tecnología necesaria para ubicar y resolver problemas</p>
                       </div>
                  </div>
