@@ -94,11 +94,11 @@ session_start();
                         <img src="img/tubo.png">
                   	</div>
                       <div class="sc_contenido">
-                        <h3>Soluciones para drenajes</h3>
+                        <h3>SOLUCIONES PARA DRENAJES</h3>
+                        <span>Brota Agua por Registros</span><br>
+						<span>Drenaje Tapado</span><br>
+						<span>Malos Olores</span>
 						<p>Contamos con todos los equipos necesarios para solucionar sus problemas de drenaje</p>
-                        <span>Brota agua por registros</span><br>
-						<span>Drenaje tapado</span><br>
-						<span>Malos olores</span>
                       </div>
                  </div>
           		</div>
@@ -110,10 +110,10 @@ session_start();
                         <img src="img/llave1.png">
                   	</div>
                       <div class="sc_contenido">
-                        <h3>Soluciones para fugas</h3>
-                         <span>Incremento en recibo mensual</span><br>
-						 <span>Manchas de humedad</span><br>
-						 <span>Medidor girando</span>
+                        <h3>SOLUCIONES PARA FUGAS</h3>
+                         <span>Incremento en Recibo Mensual</span><br>
+						 <span>Manchas de Humedad</span><br>
+						 <span>Medidor Girando</span>
 						 <p>Tenemos la tecnología necesaria para ubicar y resolver problemas</p>
                       </div>
                  </div>
@@ -127,10 +127,10 @@ session_start();
                         <img src="img/llave2.png">
                   	</div>
                       <div class="sc_contenido">
-                        <h3>Soluciones de plomería</h3>
-                         <p>Baja presión de agua o gas</p>
-						 <p>Ubicación de tubería</p>
-						 <p>Mantenimiento de fluxómetros</p>
+                        <h3>SOLUCIONES DE PLOMERÍA</h3>
+                         <span>Baja Presión de Agua o Gas</span><br>
+						 <span>Ubicación de Tubería</span><br>
+						 <span>Mantenimiento de Fluxómetros</span>
 						 <p>Nuestros técnicos cuentan con la capacitación requerida para atenderle de manera profesional</p>
                       </div>
                  </div>
@@ -143,10 +143,10 @@ session_start();
                         <img src="img/cinta.png">
                   	</div>
                       <div class="sc_contenido">
-                        <h3>Soluciones para espacios confinados</h3>
-                         <p>Desechos sanitarios</p>
-						 <p>Disposición de grasas alimenticias</p>
-						 <p>Succión de lodos</p>
+                        <h3>SOLUCIONES PARA ESPACIOS CONFINADOS</h3>
+                         <span>Desechos Sanitarios</span><br>
+						 <span>Disposición de Grasas Alimenticias</span><br>
+						 <span>Succión de Lodos</span>
 						 <p>Hacemos el trabajo que para muchos es difícil de hacer</p>
                       </div>
                  </div>
@@ -162,7 +162,7 @@ session_start();
     	<div class="container">
         	<div class="row">
             	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-               	<center><img src="img/camioneta.png"></center>
+               	<center><img style="margin-top: 30px;" src="img/camioneta.png"></center>
                </div>
                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                	<div class="encabezado_texto linea"> <h3>RAZONES PARA ELEGIRNOS</h3> </div>
