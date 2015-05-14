@@ -65,12 +65,39 @@ session_start();
     <section class="container ">
       <div class="col-md-9 margen_slide">
         <ul class="galeria_sencilla nav-inside">
-            <li><a rel="prettyPhoto[gallery2]" href="img/inspeccion con camara.jpg" class="prettyPhoto"><img src="img/inspeccion con camara.jpg"></a></li>
-            <li><a rel="prettyPhoto[gallery2]" href="img/drenaje con camion.jpg" class="prettyPhoto"><img src="img/drenaje con camion.jpg"></a></li>
-            <li><a rel="prettyPhoto[gallery2]" href="img/deteccion de fugas.jpg" class="prettyPhoto"><img src="img/deteccion de fugas.jpg"></a></li>
-			<li><a rel="prettyPhoto[gallery2]" href="img/tornado en casa.jpg" class="prettyPhoto"><img src="img/tornado en casa.jpg"></a></li>
-			<li><a rel="prettyPhoto[gallery2]" href="img/roto sonda.jpg" class="prettyPhoto"><img src="img/roto sonda.jpg"></a></li>
+            <li>
+                <a rel="prettyPhoto[gallery2]" href="img/inspeccion con camara.jpg" class="prettyPhoto"><img src="img/inspeccion con camara.jpg"></a>
+                <div class="bot_slider">
+                    <h5>Inspección de drenaje con cámara de TV</h5>
+                </div>
+            </li>
+            <li>
+              <a rel="prettyPhoto[gallery2]" href="img/drenaje con camion.jpg" class="prettyPhoto"><img src="img/drenaje con camion.jpg"></a>
+              <div class="bot_slider">
+                <h5>Desazolve de drenaje municipal</h5>
+              </div>
+            </li>
+            <li>
+              <a rel="prettyPhoto[gallery2]" href="img/deteccion de fugas.jpg" class="prettyPhoto"><img src="img/deteccion de fugas.jpg"></a>
+              <div class="bot_slider">
+                  <h5>Detección de fuga para tuberías de agua y gas</h5>
+                </div>
+              </li>
+      			<li>
+              <a rel="prettyPhoto[gallery2]" href="img/tornado en casa.jpg" class="prettyPhoto"><img src="img/tornado en casa.jpg"></a>
+              <div class="bot_slider">
+                <h5>Destape de drenaje residencial</h5>
+              </div>
+            </li>
+      			<li>
+              <a rel="prettyPhoto[gallery2]" href="img/roto sonda.jpg" class="prettyPhoto"><img src="img/roto sonda.jpg"></a>
+              <div class="bot_slider">
+                <h5>Destape de drenaje con roto-sondeo</h5>
+
+              </div>
+            </li>
         </ul>
+
       </div>
     </section> 
      <section class="h3-intro">
@@ -78,7 +105,7 @@ session_start();
         	<div class="row ">
             	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                	<center>
-                		<h1><span class="color-texto-resaltar texto-azul">Mantenemos bien, </span>lo que haces bien</h1>
+                		<h1><span class="color-texto-resaltar texto-azul">Mantenemos bien, </span>lo que haces bien.</h1>
                 		
                       <br><br>  
                  	</center>

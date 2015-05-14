@@ -393,7 +393,7 @@ header {
 	margin: 0 auto;
     padding: 40px 0;
     width: 100%;
-	background:#0084cb;
+	background:#002f73;
 	padding: 0;
 	border-bottom: 1px solid #ececec;
 	border-top: 1px solid #ececec;
@@ -438,7 +438,7 @@ header .logo img {
 .barra_superior {
     padding: 0;
 	line-height:38px;
-	background-color:#FFF;
+	background-color:#fffa00;
 	font-size: 14px;
     font-weight: bold;
 	}
@@ -7778,4 +7778,18 @@ margin-top: 5px;
 }
 .16px{
 	font-size: 16px;
+}
+.bot_slider{
+	background: #fffa00;
+	width: 100%;
+	min-height: 50px;
+}
+.bot_slider h5{
+	color: #002f73;
+	text-align: center;
+	font-size: 20px;
+	font-style: bold;
+	font-weight: 900;
+	padding: 13px;
+
 }

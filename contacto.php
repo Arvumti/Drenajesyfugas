@@ -43,7 +43,7 @@
 <body>
     <div id="cargar_web">
         <div class="cargar_item">
-            <img src="img/loading.gif" alt='loader' />
+            <img src="img/ok.gif" alt='loader' />
         </div>
     </div>
 
