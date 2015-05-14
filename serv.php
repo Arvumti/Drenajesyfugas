@@ -12,8 +12,7 @@
                         <img src="img/tubo.png">
                   	</div>
                       <div class="sc_contenido">
-                        <h3>Drenaje</h3>
-                         <p style="color:white">Drenaje</p>
+                        <h3>Soluciones para drenajes</h3>
                       </div>
                  </div>
           		</div>
@@ -25,8 +24,7 @@
                         <img src="img/llave1.png">
                   	</div>
                       <div class="sc_contenido">
-                        <h3>Tubería de Agua</h3>
-                        <p style="color:white">Tubería de agua</p>
+                        <h3>Soluciones para fugas</h3>
                       </div>
                  </div>
           		</div>
@@ -39,8 +37,7 @@
                         <img src="img/llave2.png">
                   	</div>
                       <div class="sc_contenido">
-                        <h3>Tubería de Gas</h3>
-                            <p style="color:white">Tubería de gas</p>
+                        <h3>Soluciones de plomería</h3>
                       </div>
                  </div>
           		</div>
@@ -52,8 +49,7 @@
                         <img src="img/cinta.png">
                   	</div>
                       <div class="sc_contenido">
-                        <h3>Espacios confinados</h3>
-                          <p style="color:white">Espacios confinados</p>
+                        <h3>Soluciones para espacios confinados</h3>
                       </div>
                  </div>
           		</div>

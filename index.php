@@ -65,9 +65,11 @@ session_start();
     <section class="container ">
       <div class="col-md-9 margen_slide">
         <ul class="galeria_sencilla nav-inside">
-            <li><a rel="prettyPhoto[gallery2]" href="img/slide11.jpg" class="prettyPhoto"><img src="img/slide11.jpg"></a></li>
-            <li><a rel="prettyPhoto[gallery2]" href="img/algo.jpg" class="prettyPhoto"><img src="img/algo.jpg"></a></li>
-            <li><a rel="prettyPhoto[gallery2]" href="img/slide1.jpg" class="prettyPhoto"><img src="img/slide1.jpg"></a></li>
+            <li><a rel="prettyPhoto[gallery2]" href="img/inspeccion con camara.jpg" class="prettyPhoto"><img src="img/inspeccion con camara.jpg"></a></li>
+            <li><a rel="prettyPhoto[gallery2]" href="img/drenaje con camion.jpg" class="prettyPhoto"><img src="img/drenaje con camion.jpg"></a></li>
+            <li><a rel="prettyPhoto[gallery2]" href="img/deteccion de fugas.jpg" class="prettyPhoto"><img src="img/deteccion de fugas.jpg"></a></li>
+			<li><a rel="prettyPhoto[gallery2]" href="img/tornado en casa.jpg" class="prettyPhoto"><img src="img/tornado en casa.jpg"></a></li>
+			<li><a rel="prettyPhoto[gallery2]" href="img/roto sonda.jpg" class="prettyPhoto"><img src="img/roto sonda.jpg"></a></li>
         </ul>
       </div>
     </section> 
@@ -76,7 +78,7 @@ session_start();
         	<div class="row ">
             	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                	<center>
-                		<h1>Somos <span class="color-texto-resaltar texto-azul">Especialistas</span> en todos los servicios relacionados con drenajes y fugas</h1>
+                		<h1><span class="color-texto-resaltar texto-azul">Mantenemos bien, </span>lo que haces bien</h1>
                 		
                       <br><br>  
                  	</center>
@@ -92,8 +94,11 @@ session_start();
                         <img src="img/tubo.png">
                   	</div>
                       <div class="sc_contenido">
-                        <h3>Drenaje</h3>
-                        <p style="color:white">Drenaje</p>
+                        <h3>Soluciones para drenajes</h3>
+                        <p>Brota agua por registros</p>
+						<p>Drenaje tapado</p>
+						<p>Malos olores</p>
+						<p>Contamos con todos los equipos necesarios para solucionar sus problemas de drenaje</p>
                       </div>
                  </div>
           		</div>
@@ -105,8 +110,11 @@ session_start();
                         <img src="img/llave1.png">
                   	</div>
                       <div class="sc_contenido">
-                        <h3>Tubería de Agua</h3>
-                         <p style="color:white">Tubería de agua</p>
+                        <h3>Soluciones para fugas</h3>
+                         <p>Incremento en recibo mensual</p>
+						 <p>Manchas de humedad</p>
+						 <p>Medidor girando</p>
+						 <p>Tenemos la tecnología necesaria para ubicar y resolver problemas</p>
                       </div>
                  </div>
           		</div>
@@ -119,8 +127,11 @@ session_start();
                         <img src="img/llave2.png">
                   	</div>
                       <div class="sc_contenido">
-                        <h3>Tubería de Gas</h3>
-                         <p style="color:white">Tubería de gas</p>
+                        <h3>Soluciones de plomería</h3>
+                         <p>Baja presión de agua o gas</p>
+						 <p>Ubicación de tubería</p>
+						 <p>Mantenimiento de fluxómetros</p>
+						 <p>Nuestros técnicos cuentan con la capacitación requerida para atenderle de manera profesional</p>
                       </div>
                  </div>
           		</div>
@@ -132,8 +143,11 @@ session_start();
                         <img src="img/cinta.png">
                   	</div>
                       <div class="sc_contenido">
-                        <h3>Espacios confinados</h3>
-                         <p style="color:white">Espacios confinados</p>
+                        <h3>Soluciones para espacios confinados</h3>
+                         <p>Desechos sanitarios</p>
+						 <p>Disposición de grasas alimenticias</p>
+						 <p>Succión de lodos</p>
+						 <p>Hacemos el trabajo que para muchos es difícil de hacer</p>
                       </div>
                  </div>
           		</div>
@@ -151,7 +165,7 @@ session_start();
                	<center><img src="img/camioneta.png"></center>
                </div>
                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-               	<div class="encabezado_texto linea"> <h3>Razones para elegirnos</h3> </div>
+               	<div class="encabezado_texto linea"> <h3>RAZONES PARA ELEGIRNOS</h3> </div>
                 	<div class="row">
                   	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     		<div class="caja_servicios icono_sencillo caja_standar">
@@ -159,8 +173,8 @@ session_start();
                              	<i class="fa fa-wrench"></i>   
                              </div>
                             	<div class="sc_contenido">
-                         			<h3>Somos profesionales</h3>
-                             	<p>Duis sit amet orci et lectus dictum auctor a nec enim. Donec suscipit fringilla elementum.. Vestibulum hendrerit diam nunc, in tempus urna rhoncus faucibus.</p>
+                         			<h3>SOMOS PROFESIONALES</h3>
+                             	<p>Nuestros técnicos cuentan con capacitación, equipo y herramientas requeridas para atenderle de manera profesional en su casa, comercio o industria</p>
                              </div>
                          </div>
                     	</div>
@@ -172,8 +186,8 @@ session_start();
                              	<i class="fa fa-bolt"></i>   
                              </div>
                             	<div class="sc_contenido">
-                         			<h3>Trabajos garantizados</h3>
-                             	<p>Duis sit amet orci et lectus dictum auctor a nec enim. Donec suscipit fringilla elementum.. Vestibulum hendrerit diam nunc, in tempus urna rhoncus faucibus.</p>
+                         			<h3>CONTAMOS CON TECNOLOGIA</h3>
+                             	<p>Usamos tecnología de punta para resolver cualquier problema en tuberías de agua, gas, drenaje o espacios confinados</p>
                              </div>
                          </div>
                     	</div>
@@ -186,14 +200,14 @@ session_start();
                              	<i class="fa fa-check-circle"></i>   
                              </div>
                             	<div class="sc_contenido">
-                         			<h3>Gran trayectoria</h3>
-                             	<p>Duis sit amet orci et lectus dictum auctor a nec enim. Donec suscipit fringilla elementum.. Vestibulum hendrerit diam nunc, in tempus urna rhoncus faucibus.</p>
+                         			<h3>TRABAJOS GARANTIZADOS</h3>
+                             	<p>Cada caso es diferente y todo tiene una solución. Le atendemos de manera personal para asegurarnos que quedará satisfecho con nuestro servicio</p>
                              </div>
                          </div>
                     	</div>
                         
                         
-                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                     <!--<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     		<div class="caja_servicios icono_sencillo caja_standar">
                             	<div class="caja_icono">
                              	<i class="fa fa-check-circle"></i>   
@@ -203,7 +217,7 @@ session_start();
                              	<p>Duis sit amet orci et lectus dictum auctor a nec enim. Donec suscipit fringilla elementum.. Vestibulum hendrerit diam nunc, in tempus urna rhoncus faucibus.</p>
                              </div>
                          </div>
-                    	</div>   
+                    	</div>-->
                         
                           
                   </div>
