@@ -133,9 +133,12 @@ function SaveInfo($options, $data) {//Inserta la informacion de la reportes
 										"'.$data['link'].'", "'.$data['video'].'", "'.$data['fecha'].'")'; 
 				break;
 			case 5://Inserta la informacion de las categorias
+				$idPadre = '"'.$data['idPadre'].'"';
+				if($data['idPadre'] == "0" || $data['idPadre'] == 0)
+					$idPadre = '(NULL)';
 				$consulta = '   INSERT INTO categorias  (nombre, tipo, idPadre, idReporte)
 								VALUES ("'.$data['nombre'].'", "'.$data['tipo'].'", 
-										"'.$data['idPadre'].'", "'.$data['idReporte'].'")'; 
+										'.$idPadre.', "'.$data['idReporte'].'")'; 
 				break;
             default:
                 $consulta = 'SELECT 1;';

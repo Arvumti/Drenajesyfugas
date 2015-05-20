@@ -257,7 +257,7 @@ $user = $user ? $user : 'Admin';
 
         <script class="tmp_acc_galeria" type="text/x-handlebars-template">
 			<dd class="accordion-navigation">
-				<a href="#cat{{idCategoria}}">{{nombre}}</a>
+				<a href="#cat{{idCategoria}}"><i class="fa fa-times" data-idcategoria="{{idCategoria}}"></i> {{nombre}}</a>
 				<div id="cat{{idCategoria}}" data-idcategoria="{{idCategoria}}" class="content">
 					<div class="row">
 						<div class="small-10 columns">

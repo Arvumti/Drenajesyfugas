@@ -359,6 +359,7 @@ var ViPopGaleria = Backbone.View.extend({
         'click .btnCancelar' : 'click_btnCancelar',
         'click .btnUpload' : 'click_btnUpload',
         'click .gvData .fa-minus' : 'click_delete',
+        'click .accordion-navigation .fa-times' : 'click_delete_categoria',
     },
     initialize: function() {
         this.dal_opc = 5;
@@ -409,6 +410,7 @@ var ViPopGaleria = Backbone.View.extend({
     },
     loadImages: function(init) {
         var that = this;
+        this.accorGaleria.html('');
         app.ut.post({url:'DAL.php', done:done, type:'json', data:{options:{opcion:this.dal_opc, mod:10}, data:{idReporte:this.idReporte}}});
 
         function done(data) {
@@ -442,7 +444,7 @@ var ViPopGaleria = Backbone.View.extend({
             var idCategoria = jIni.idCategoria;
             that.recursiveRender(accInit, idCategoria, arrCategorias);
 
-            that.accorGaleria.html('').append(accInit);
+            that.accorGaleria.append(accInit);
             that.$el.foundation();
             /*
             for (var i = 0; i < json.length; i++) {
@@ -479,6 +481,25 @@ var ViPopGaleria = Backbone.View.extend({
             $(e.currentTarget).next().addClass('active');
     },
     /*-------------------------- Eventos --------------------------*/
+    click_delete_categoria: function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        debugger
+
+        var that = this,
+            elem = $(e.currentTarget),
+            idCategoria = elem.data('idcategoria');
+        app.ut.post({url:'DAL.php', done:done, type:'json', data:{options:{opcion:that.dal_opc, crud:3, mod:1}, data:{idCategoria:idCategoria}}});
+
+        function done (data) {
+            debugger
+            if(data.data.err)
+                alert('Error: ' + data.data.err)
+            else {
+                $('[href="#cat' + idCategoria + '"], #cat' + idCategoria).remove();
+            }
+        }
+    },
     change_images: function(e) {
         var elem = $(e.currentTarget);
         var form = elem.parent('form');
