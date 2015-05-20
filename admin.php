@@ -254,6 +254,61 @@ $user = $user ? $user : 'Admin';
                 </section>
             </div>
         </script>
+
+        <script class="tmp_acc_galeria" type="text/x-handlebars-template">
+			<dd class="accordion-navigation">
+				<a href="#cat{{idCategoria}}">{{nombre}}</a>
+				<div id="cat{{idCategoria}}" data-idcategoria="{{idCategoria}}" class="content">
+					<div class="row">
+						<div class="small-10 columns">
+							<label>
+								Nombre:
+								<input type="text" data-field="nombre" />
+							</label>
+						</div>
+						<div class="small-2 columns">
+							<label>
+								<br/>
+								<button type="button" class="button tiny success expand btnAddSubCategoria">Agregar subcategoria</button>
+							</label>
+						</div>
+						<div class="small-12 columns">
+                            <table class="table table-custom gv-images-categorias">
+                                <thead>
+                                    <tr>
+                                        <td class="options">Operaciones</td>
+                                        <td>Direccion</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                {{#imagenes}}
+					            	<tr data-id="{{idReporteImagen}}" data-reporte="{{idReporte}}">
+					            		<td><i class="fa fa-minus"></i></td>
+					            		<td>{{alias}}</td>
+					            	</tr>
+					            {{/imagenes}}
+                                </tbody>
+                                <tfoot>
+                                	<tr>
+                                		<td colspan="2">
+                                			<form action="" method="post" enctype="multipart/form-data" class="multi-image">
+												<input type="file" data-idcategoria="{{idCategoria}}" class="file-galeria" name="files[]" multiple="multiple" accept="image/*" />
+											</form>
+                                		</td>
+                                	</tr>
+                                </tfoot>
+                            </table>
+                        </div>
+					</div>
+					<div class="row pnl-subcategoria">
+						<div class="small-12 columns">
+							<dl class="accor-subgaleria accordion" data-accordion>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</dd>
+        </script>
 	</head>
 	<body>
 		<nav class="top-bar" data-topbar role="navigation">
@@ -340,7 +395,28 @@ $user = $user ? $user : 'Admin';
                     <h4 class="pop-title">Galeria</h4>
                 </section>
                 <section class="pop-body">
-                    <div class="row">
+					<div class="row">
+						<div class="small-10 columns">
+							<label>
+								Nombre:
+								<input type="text" data-field="nombre" />
+							</label>
+						</div>
+						<div class="small-2 columns">
+							<label>
+								<br/>
+								<button type="button" class="button tiny success btnAddCategoria">Agregar categoria</button>
+							</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="small-12 columns">
+							<dl class="accor-galeria accordion" data-accordion>
+							</dl>
+						</div>
+					</div>
+
+                    <!--div class="row">
                         <div class="small-12 columns">
                             <table class="table table-custom gvData">
                                 <thead>
@@ -358,7 +434,7 @@ $user = $user ? $user : 'Admin';
                                 <input type="file" id="file" name="files[]" multiple="multiple" accept="image/*" />
                             </form>
                         </div>
-                    </div>
+                    </div-->
                 </section>
                 <section class="pop-foot row">
                     <div class="small-12 columns">

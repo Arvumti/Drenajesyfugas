@@ -61,6 +61,8 @@ function templates(){
         tyaTmp = Handlebars.compile('{{dKey}}'),
 
         tmp_opt_clientes = Handlebars.compile($('.tmp_opt_clientes').html()),
+        
+        tmp_acc_galeria = Handlebars.compile($('.tmp_acc_galeria').html()),
 
         tmp_tr_cliente = Handlebars.compile($('.tmp_tr_cliente').html()),
         tmp_body_save_cliente = Handlebars.compile($('.tmp_body_save_cliente').html()),
@@ -80,6 +82,7 @@ function templates(){
         tyaBase: tyaBase,
         tyaTmp: tyaTmp,
         opt_clientes: tmp_opt_clientes,
+        acc_galeria: tmp_acc_galeria,
 
         tr_cliente: tmp_tr_cliente,
         body_save_cliente: tmp_body_save_cliente,

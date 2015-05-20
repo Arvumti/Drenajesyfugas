@@ -30,7 +30,7 @@ if(isset($idCliente) && isset($idReporte)) {
 	for ($i=0; $i < count($reporte); $i++) {		
 		$correos = $reporte[$i]['email'];
 
-		$imagenes = GetInfoAdmin(Array('opcion' => 3), Array('idReporte' => $reporte[$i]['idReporte']));
+		$imagenes = GetInfoAdmin(Array('opcion' => 5), Array('idReporte' => $reporte[$i]['idReporte']));
 
 		$imagenes_html = '';
 		if(count($imagenes) > 0) {
@@ -65,6 +65,16 @@ if(isset($idCliente) && isset($idReporte)) {
 				$pumbometro = ' <p>Plumbómetro:<i class="icon-thermometer red"></i> </p>';
 				break;
 		}
+
+		$imagenes_html = '<div class="row">
+							<div class="small-12 columns">
+								<h2>Galeria de imagenes</h2>
+							</div>
+							<div class="small-12 columns">
+								<dl class="accor-galeria accordion" data-accordion>
+								</dl>
+							</div>
+						</div>';
 
 	  	$reporte_html .= '<p>Folio: '.$reporte[$i]['idReporte'].'</p>
 	  					  <p>Tipo de servicio: '.$reporte[$i]['tipo'].'</p>
@@ -102,6 +112,7 @@ if(isset($idCliente) && isset($idReporte)) {
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	
 	<link href="estilos.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
 	<link href="css/custom.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/theme-options.css" media="all">
@@ -182,6 +193,7 @@ if(isset($idCliente) && isset($idReporte)) {
 						</div>
 					</div>
 				</div>
+				
 				<div class="row">
 					<?php echo $reporte_html; ?>
 				</div>
@@ -221,7 +233,43 @@ if(isset($idCliente) && isset($idReporte)) {
 	<script type="text/javascript" src="js/retina.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>  
 
+	<script type="text/javascript" src="js/lodash.underscore.min.js"></script>
+	<script type="text/javascript" src="js/backbone-min.js"></script>
+	<script type="text/javascript" src="js/foundation.min.js"></script>
+	<script type="text/javascript" src="js/handlebars.js"></script>
+	<script type="text/javascript" src="js/utilerias/base.js"></script>
+	<script type="text/javascript" src="js/utilerias/templates.js"></script>
+	<script type="text/javascript" src="js/imagenes.js"></script>  
 
+	<script class="tmp_acc_galeria" type="text/x-handlebars-template">
+		<dd class="accordion-navigation">
+			<a href="#cat{{idCategoria}}">{{nombre}}</a>
+			<div id="cat{{idCategoria}}" data-idcategoria="{{idCategoria}}" class="content">
+				<div class="row">
+					<div class="small-12 columns">
+			            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 reporte_img">
+							<h3>Imagenes</h3>
+							<ul class="galeria_sencilla nav-inside">
+                        		{{#imagenes}}
+								<li>
+									<a href="{{direccion}}" class="prettyPhoto" data-rel="prettyPhoto[gallery-reporte{{idReporte}}]">
+										<img src="{{direccion}}">
+									</a>
+								</li>
+			            		{{/imagenes}}
+							</ul> 
+						</div>
+                    </div>
+				</div>
+				<div class="row pnl-subcategoria">
+					<div class="small-12 columns">
+						<dl class="accor-subgaleria accordion" data-accordion>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</dd>
+    </script>
 
 	</body>
 </html>

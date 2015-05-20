@@ -322,8 +322,7 @@ var ViPopReporte = ViPopSave.extend({
 		this.txaEmail = this.$el.find('[data-field="email"]');
 
 		ViPopSave.prototype.initialize.call(this, data);
-
-		this.events['change [data-field="idCliente"]'] = 'change_cliente';
+        this.events['change [data-field="idCliente"]'] = 'change_cliente';
 	},
 	/*--------------------- Base ---------------------*/
 	render: function(options) {
@@ -362,7 +361,8 @@ var ViPopGaleria = Backbone.View.extend({
         'click .gvData .fa-minus' : 'click_delete',
     },
     initialize: function() {
-        this.dal_opc = 3;
+        this.dal_opc = 5;
+        this.dal_opc_up = 3;
         this.idReporte = null;
 
         this.form = this.$el.find('.multi-image');
@@ -370,6 +370,14 @@ var ViPopGaleria = Backbone.View.extend({
         this.gvData = this.$el.find('.gvData');
 
         this.tempalteTR = app.templates.tr_reporte_galeria;
+
+        this.accorGaleria = this.$el.find('.accor-galeria');
+        this.acc_galeria = app.templates.acc_galeria;
+
+        this.events['click .btnAddCategoria'] = 'add_categoria';
+        this.events['click .btnAddSubCategoria'] = 'add_subcategoria';
+        this.events['click .accordion-navigation > a'] = 'click_accordeon';
+        this.events['change .file-galeria'] = 'change_images';
     },
     /*-------------------------- Base --------------------------*/
     render: function(id) {
@@ -379,24 +387,196 @@ var ViPopGaleria = Backbone.View.extend({
         this.loadImages(true);
     },
     clear: function() {
-        this.form[0].reset();
+        //this.form[0].reset();
     },
     close: function() {
         this.$el.foundation('reveal', 'close');
+    },
+    recursiveRender: function(elemBase, idPadre, data) {
+        var categorias = _.where(data, {idPadre:idPadre.toString()});
+        if(!categorias || categorias.length == 0)
+            return;
+
+        for (var i = 0; i < categorias.length; i++) {
+            var jCategoria = categorias[i];
+
+            var htmlCats = this.acc_galeria(jCategoria);
+            var sub = elemBase.find('#cat' + jCategoria.idPadre + ' > .pnl-subcategoria').children('.columns').children('.accor-subgaleria');
+            sub.append(htmlCats);
+
+            this.recursiveRender(elemBase, jCategoria.idCategoria, data);
+        };
     },
     loadImages: function(init) {
         var that = this;
         app.ut.post({url:'DAL.php', done:done, type:'json', data:{options:{opcion:this.dal_opc, mod:10}, data:{idReporte:this.idReporte}}});
 
         function done(data) {
-            var trs = that.tempalteTR(data);
-            that.gvData.find('tbody').html(trs);
-
+            debugger
             if(init)
                 that.$el.foundation('reveal', 'open');
+
+            var json = data.data;
+            var grCategorias = _.groupBy(json, 'idCategoria');
+            var arrCategorias = Array();
+            for(var key in grCategorias) {
+                var currCategoria = {
+                    idCategoria: grCategorias[key][0].idCategoria,
+                    nombre: grCategorias[key][0].nombre,
+                    tipo: grCategorias[key][0].tipo,
+                    idPadre: grCategorias[key][0].idPadre,
+                    imagenes: grCategorias[key],
+                };
+
+                arrCategorias.push(currCategoria);
+            }
+
+            debugger
+            var jIni = _.findWhere(arrCategorias, {tipo:'1'});
+            if(!jIni)
+                return;
+
+            var accInit = $(that.acc_galeria(jIni));
+
+            var next = 0;
+            var idCategoria = jIni.idCategoria;
+            that.recursiveRender(accInit, idCategoria, arrCategorias);
+
+            that.accorGaleria.html('').append(accInit);
+            that.$el.foundation();
+            /*
+            for (var i = 0; i < json.length; i++) {
+                var acc = that.acc_galeria(json[i]);
+            };
+
+            var trs = that.tempalteTR(data);
+            that.gvData.find('tbody').html(trs);*/
         }
     },
+    saveCategorias: function(json, elem) {
+        var that = this;
+        var acc = this.accorGaleria.find('.accordion-navigation');
+        if(acc.length == 0)
+            json.tipo = 1; 
+
+        app.ut.post({url:'DAL.php', done:done, type:'json', data:{options:{opcion:this.dal_opc, crud:1, mod:1}, data:json}});
+        //done({data:{data:{idkey:1}}});
+        function done(data) {
+            json.idCategoria = data.data.idkey;
+            var acc = that.acc_galeria(json);
+            elem.append(acc);
+            that.$el.foundation();
+        }
+    },
+    /*-------------------------- Foundation --------------------------*/
+    click_accordeon: function(e) {
+        e.preventDefault();
+        var currContent = $(e.currentTarget).next();
+        var hasClass = currContent.hasClass('active');
+
+        $(e.currentTarget).closest('.accordion').find('.content').removeClass('active');
+        if(!hasClass)
+            $(e.currentTarget).next().addClass('active');
+    },
     /*-------------------------- Eventos --------------------------*/
+    change_images: function(e) {
+        var elem = $(e.currentTarget);
+        var form = elem.parent('form');
+
+        var that = this;
+        var idCategoria = elem.data('idcategoria');
+        var jdata = {opcion:this.dal_opc_up, crud:1, mod:1};
+        debugger
+        
+        lShow();
+        var formData = new FormData(form[0]);
+        formData.append("data", JSON.stringify({idCategoria:idCategoria}));
+        formData.append("options", JSON.stringify(jdata));
+        formData.append("has_image", true);
+    
+        app.xhr = $.ajax({
+            url: 'DAL.php',  //Server script to process data
+            type: 'POST',
+            success: done,
+            error: function(xhr){debugger},
+            xhr: function() {  // Custom XMLHttpRequest
+                var myXhr = $.ajaxSettings.xhr();
+                if(myXhr.upload){ // Check if upload property exists
+                    myXhr.upload.addEventListener('progress', progressHandlingFunction, false); // For handling the progress of the upload
+                }
+                return myXhr;
+            },
+            data: formData, //Options to tell jQuery not to process data or worry about content-type.
+            dataType: "json",
+            cache: false,
+            contentType: false,
+            processData: false
+        });
+
+        app.xhr.always(function() {
+            lHide();
+        });
+
+        function progressHandlingFunction(e){
+            console.log(e);
+            if(e.lengthComputable){
+                console.log({value:e.loaded, max:e.total});
+                
+                $topLoader.setProgress(0);
+                $topLoader.setValue('0kb');
+                var kb = e.loaded;
+                var totalKb = e.total + 100;
+                
+                $topLoader.setProgress(kb / totalKb);
+                $topLoader.setValue(kb.toString() + 'kb');
+            }
+        }
+
+        function done (data) {
+            debugger
+            if(data.errors && data.errors.length > 0){
+                var errores = data.errors.join(', ');
+                alert(errores);
+            }
+            
+            if(data.data || data.data.res == 1) {
+                var trs = app.templates.tr_reporte_galeria({data:data.images});
+                form.parents('table').find('tbody').html(trs);
+            }
+            else
+                alert('error al cargar las imagenes' + data.data.err);
+            
+            form[0].reset();
+        }
+    },
+    add_categoria: function(e) {
+        var nombre = $(e.currentTarget).closest('.row').find('input').val();
+        var json = {
+            idCategoria:0,
+            nombre:nombre,
+            tipo:0,
+            idReporte:this.idReporte,
+            idPadre:0,
+        };          
+
+        this.saveCategorias(json, this.accorGaleria);
+    },
+    add_subcategoria: function(e) {
+        debugger
+        var nombre = $(e.currentTarget).closest('.row').find('input').val();
+        var content = $(e.currentTarget).closest('.content');
+        var subGaleria = content.children('.row').children('.columns').children('.accor-subgaleria');
+
+        var json = {
+            idCategoria:0,
+            nombre:nombre,
+            tipo:0,
+            idReporte:this.idReporte,
+            idPadre:content.data('idcategoria'),
+        };           
+
+        this.saveCategorias(json, subGaleria);
+    },
     click_delete: function(e) {
         var tr = $(e.currentTarget).parents('tr');
         var idImagen = tr.data('id');
@@ -416,7 +596,7 @@ var ViPopGaleria = Backbone.View.extend({
     },
     click_btnUpload: function() {
     	var that = this;
-        var jdata = {opcion:this.dal_opc, crud:1, mod:1};
+        var jdata = {opcion:this.dal_opc_up, crud:1, mod:1};
         debugger
         
 		lShow();

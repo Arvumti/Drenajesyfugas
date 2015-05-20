@@ -37,14 +37,22 @@ function GetInfoAdmin($options, $data) {
 							WHERE idCliente = "'.$data['idCliente'].'"'; 
 			break;
 		case 3://Obtiene la informacion de las  imagenes de los reportes
-			$consulta = '   SELECT  idReporteImagen, idReporte, direccion, alias
+			$consulta = '   SELECT  idReporteImagen, idCategoria, direccion, alias
 							FROM reportes_imagenes
-							WHERE idReporte = "'.$data['idReporte'].'"'; 
+							WHERE idCategoria = "'.$data['idCategoria'].'"'; 
 			break;
 		case 4://Obtiene la informacion de los posts
 			$consulta = '   SELECT  idPost, texto, titulo, link, video, fecha
 							FROM posts
 							ORDER BY fecha DEsc'; 
+			break;
+		case 5://Obtiene la informacion de los posts
+			$consulta = '   SELECT 	a.idCategoria, a.nombre, a.tipo, a.idPadre,
+									b.idReporteImagen, b.direccion, b.alias
+							FROM categorias a
+							LEFT JOIN reportes_imagenes b
+							ON a.idCategoria = b.idCategoria
+							AND a.idReporte = '.$data['idReporte']; 
 			break;
 		default:
 			$consulta = 'SELECT 1;';
@@ -70,14 +78,22 @@ function GetInfo($options, $data) {
 							FROM clientes'; 
 			break;
 		case 3://Obtiene la informacion de las  imagenes de los reportes
-			$consulta = '   SELECT  idReporteImagen, idReporte, direccion, alias
+			$consulta = '   SELECT  idReporteImagen, idCategoria, direccion, alias
 							FROM reportes_imagenes
-							WHERE idReporte = "'.$data['idReporte'].'"'; 
+							WHERE idCategoria = "'.$data['idCategoria'].'"'; 
 			break;
 		case 4://Obtiene la informacion de los posts
 			$consulta = '   SELECT  idPost, texto, titulo, link, video, fecha
 							FROM posts
-							ORDER BY fecha DEsc'; 
+							ORDER BY fecha DESC'; 
+			break;
+		case 5://Obtiene la informacion de los posts
+			$consulta = '   SELECT 	a.idCategoria, a.nombre, a.tipo, a.idPadre,
+									b.idReporteImagen, b.direccion, b.alias
+							FROM categorias a
+							LEFT JOIN reportes_imagenes b
+							ON a.idCategoria = b.idCategoria
+							WHERE a.idReporte = '.$data['idReporte']; 
 			break;
 		default:
 			$consulta = 'SELECT 1;';
@@ -108,13 +124,18 @@ function SaveInfo($options, $data) {//Inserta la informacion de la reportes
 								VALUES ("'.$data['nombre'].'", "'.$data['email'].'");';
                 break;
             case 3://Inserta la galeria de los reportes
-                $res = LoadGalery($data['idReporte']);
+                $res = LoadGalery($data['idCategoria']);
             	return $res;
                 break;
 			case 4://Inserta la informacion de los posts
 				$consulta = '   INSERT INTO posts  (idPost, texto, titulo, link, video, fecha)
 								VALUES ("'.$data['idPost'].'", "'.$data['texto'].'", "'.$data['titulo'].'", 
 										"'.$data['link'].'", "'.$data['video'].'", "'.$data['fecha'].'")'; 
+				break;
+			case 5://Inserta la informacion de las categorias
+				$consulta = '   INSERT INTO categorias  (nombre, tipo, idPadre, idReporte)
+								VALUES ("'.$data['nombre'].'", "'.$data['tipo'].'", 
+										"'.$data['idPadre'].'", "'.$data['idReporte'].'")'; 
 				break;
             default:
                 $consulta = 'SELECT 1;';
@@ -154,13 +175,27 @@ function SaveInfo($options, $data) {//Inserta la informacion de la reportes
     else if($options['crud'] == 3) {
         switch ($options['opcion']) {
             case 1://Elimina la informacion del reporte
-            	$row = select('SELECT direccion FROM reportes_imagenes WHERE idReporte="'.$data['idReporte'].'";');
+            	$row = select('	SELECT direccion 
+            					FROM reportes_imagenes 
+            					WHERE idCategoria IN (
+                                						SELECT idReporte 
+                                						FROM categorias
+                                						WHERE idReporte = "'.$data['idReporte'].'"
+                                					 );');
             	for($i = 0; $i<count($row); $i++){
                     if(file_exists($row[$i]['direccion']))
                         unlink($row[$i]['direccion']);
             	}
 
-                $consulta = '   DELETE FROM reportes_imagenes
+            	$consulta = '   DELETE FROM reportes_imagenes
+                                WHERE idCategoria IN (
+                                						SELECT idReporte 
+                                						FROM categorias
+                                						WHERE idReporte = "'.$data['idReporte'].'"
+                                					 );'; 
+                $res = execQuery($consulta);
+
+                $consulta = '   DELETE FROM categorias
                                 WHERE idReporte="'.$data['idReporte'].'";'; 
                 $res = execQuery($consulta);
 
@@ -182,6 +217,23 @@ function SaveInfo($options, $data) {//Inserta la informacion de la reportes
 			case 4://Elimina la informacion de los posts
 				$consulta = '   DELETE FROM posts
 								WHERE idPost = "'.$data['idPost'].'"'; 
+				break;
+			case 5://Elimina la informacion de una categoria
+            	$row = select('	SELECT direccion 
+            					FROM reportes_imagenes 
+            					WHERE idCategoria = "'.$data['idCategoria'].'";');
+            	for($i = 0; $i<count($row); $i++){
+                    if(file_exists($row[$i]['direccion']))
+                        unlink($row[$i]['direccion']);
+            	}
+
+            	$consulta = '   DELETE FROM reportes_imagenes
+                                WHERE idCategoria = "'.$data['idCategoria'].'";'; 
+                $res = execQuery($consulta);
+
+                $consulta = '   DELETE FROM categorias
+                                WHERE idCategoria="'.$data['idCategoria'].'";'; 
+                break;
             default:
                 $consulta = 'SELECT 3;';
                 break;
@@ -210,7 +262,7 @@ function SaveInfo($options, $data) {//Inserta la informacion de la reportes
 	return array('data' => $res, 'consulta' => $consulta, 'update' => $update, 'files' => $_FILES, 'dataX' => $options);
 }
 
-function LoadGalery($idReporte) {
+function LoadGalery($idCategoria) {
 	$arr = multycopy();
 	$images = $arr['images'];
 	$alias = $arr['alias'];
@@ -218,14 +270,19 @@ function LoadGalery($idReporte) {
 
 	$consultas = Array();
 	for ($i=0; $i < count($images); $i++) { 
-		$consulta = '   INSERT INTO reportes_imagenes (idReporte, direccion, alias)
-						VALUES ("'.$idReporte.'", "'.$images[$i].'", "'.$alias[$i].'");';
+		$consulta = '   INSERT INTO reportes_imagenes (idCategoria, direccion, alias)
+						VALUES ("'.$idCategoria.'", "'.$images[$i].'", "'.$alias[$i].'");';
 
 		array_push($consultas, $consulta);
 	}
 
 	$res = execArr($consultas);
-	return array('data' => $res, 'consulta' => $consultas, 'images' => $images, 'errors' => $errors, 'images_copy' => $arr);
+
+	$consultaRep = 'SELECT idReporteImagen, direccion, alias
+					FROM reportes_imagenes
+					WHERE idCategoria = '.$idCategoria;
+	$imagesDB = select($consultaRep);
+	return array('data' => $res, 'consulta' => $consultas, 'images' => $imagesDB, 'errors' => $errors, 'images_copy' => $arr);
 }
 
 if(isset($_POST['has_image'])) {
