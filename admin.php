@@ -287,7 +287,9 @@ $user = $user ? $user : 'Admin';
                                 </tfoot>
                             </table>
                         </div>
-                        <br/><br/>
+                    </div>
+                    <br/><br/>
+                    <div class="row">
 						<div class="small-10 columns">
 							<label>
 								Nombre:
