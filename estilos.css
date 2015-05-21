@@ -7793,3 +7793,24 @@ margin-top: 5px;
 	padding: 13px;
 
 }
+
+.content {
+    background-color: rgba(210, 210, 210, 0.7) !important;
+}
+
+.loading {
+    background-color: rgba(30, 30, 30, 0.5);
+    height:100%;
+    left: 0;
+    margin:0;
+    position: absolute;
+    top:0;
+    width:100%;
+    z-index: 9999;
+}
+
+.loading #topLoader {
+    left: 44%;
+    position:absolute;
+    top: 10%;
+}
