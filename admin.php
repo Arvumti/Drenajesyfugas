@@ -260,18 +260,6 @@ $user = $user ? $user : 'Admin';
 				<a href="#cat{{idCategoria}}"><i class="fa fa-times" data-idcategoria="{{idCategoria}}"></i> {{nombre}}</a>
 				<div id="cat{{idCategoria}}" data-idcategoria="{{idCategoria}}" class="content">
 					<div class="row">
-						<div class="small-10 columns">
-							<label>
-								Nombre:
-								<input type="text" data-field="nombre" />
-							</label>
-						</div>
-						<div class="small-2 columns">
-							<label>
-								<br/>
-								<button type="button" class="button tiny success expand btnAddSubCategoria">Agregar subcategoria</button>
-							</label>
-						</div>
 						<div class="small-12 columns">
                             <table class="table table-custom gv-images-categorias">
                                 <thead>
@@ -299,6 +287,18 @@ $user = $user ? $user : 'Admin';
                                 </tfoot>
                             </table>
                         </div>
+						<div class="small-10 columns">
+							<label>
+								Nombre:
+								<input type="text" data-field="nombre" />
+							</label>
+						</div>
+						<div class="small-2 columns">
+							<label>
+								<br/>
+								<button type="button" class="button tiny success expand btnAddSubCategoria">Agregar subcategoria</button>
+							</label>
+						</div>
 					</div>
 					<div class="row pnl-subcategoria">
 						<div class="small-12 columns">
