@@ -23,7 +23,7 @@ if(isset($idCliente) && isset($idReporte)) {
 
 	for ($i=0; $i < count($reportes); $i++)
 		$paginacion_html .= '
-								<li><a href="'.$url.'?c='.$idCliente.'&r='.$reportes[$i]['idReporte'].'">'.$reportes[$i]['idReporte'].'</a></li>
+								<li><a href="'.$url.'?c='.$idCliente.'&r='.$reportes[$i]['idReporte'].'">'.$reportes[$i]['fechaIni'].'</a></li>
 							';
 
 	$reporte_html = '';
@@ -176,12 +176,12 @@ if(isset($idCliente) && isset($idReporte)) {
 					<div class="row borde_servicio">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<div class="encabezado_texto encabezado_largo">
-								<h1>Reportes</h1>
-								<span><h5 class="16px">Listado de los servicios prestados a su empresa..</h5></span>
+								<!--<h1>Reportes</h1>-->
+								<span><h5 class="16px">Listado de los servicios prestados a su empresa...</h5></span>
 
 							    <!-- <h5 class="16px"><b>Páginas de reportes..</b></h5> -->
 
-								<ul class="pagination">
+								<ul class="pagination" style="height: 2.5rem; display: inline-block;">
 									<?php echo $paginacion_html; ?>
 								</ul>
 							</div>
