@@ -577,7 +577,7 @@ var ViPopGaleria = Backbone.View.extend({
         var json = {
             idCategoria:0,
             nombre:nombre,
-            tipo:0,
+            tipo:1,
             idReporte:this.idReporte,
             idPadre:0,
         };          
