@@ -584,7 +584,7 @@ var ViPopGaleria = Backbone.View.extend({
     },
     add_subcategoria: function(e) {
         debugger
-        var nombre = $(e.currentTarget).closest('.row').find('input').val();
+        var nombre = $(e.currentTarget).closest('.row').find('input:text').val();
         var content = $(e.currentTarget).closest('.content');
         var subGaleria = content.children('.row').children('.columns').children('.accor-subgaleria');
 
