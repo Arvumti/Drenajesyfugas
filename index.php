@@ -39,6 +39,7 @@ session_start();
 </head>
 
 <body>
+<?php include_once("analyticstracking.php") ?>
     <div id="cargar_web">
         <div class="cargar_item">
             <img src="img/ok.gif" alt='loader' />
