@@ -51,8 +51,10 @@ var ViPopGaleria = Backbone.View.extend({
 
             debugger
             var jIni = _.where(arrCategorias, {tipo:'1'});
-            if(jIni.length == 0)
+            if(jIni.length == 0) {
+                $('.gals-container').addClass('hidden');
                 return;
+            }
 
             for (var i = 0; i < jIni.length; i++) {
                 var accInit = $(that.acc_galeria(jIni[i]));

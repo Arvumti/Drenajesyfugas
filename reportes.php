@@ -67,9 +67,9 @@ if(isset($idCliente) && isset($idReporte)) {
 		
 		$imagenes_html = '';
 		if(count($imagenes) > 0)
-			$imagenes_html = '<div class="row">
+			$imagenes_html = '<div class="row gals-container">
 								<div class="small-12 columns">
-									<h2>Galeria de imagenesX</h2>
+									<h2>Galeria de imagenes</h2>
 								</div>
 								<div class="small-12 columns">
 									<dl class="accor-galeria accordion" data-accordion>
