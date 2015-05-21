@@ -7794,6 +7794,10 @@ margin-top: 5px;
 
 }
 
+.accordion-navigation > a {
+    background-color: rgba(150, 150, 150, 0.5) !important;	
+}
+
 table .options {
 	min-width: 50px;
 	width: 10%;
