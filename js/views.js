@@ -434,17 +434,19 @@ var ViPopGaleria = Backbone.View.extend({
             }
 
             debugger
-            var jIni = _.findWhere(arrCategorias, {tipo:'1'});
-            if(!jIni)
+            var jIni = _.where(arrCategorias, {tipo:'1'});
+            if(jIni.length == 0)
                 return;
 
-            var accInit = $(that.acc_galeria(jIni));
+            for (var i = 0; i < jIni.length; i++) {
+                var accInit = $(that.acc_galeria(jIni[i]));
 
-            var next = 0;
-            var idCategoria = jIni.idCategoria;
-            that.recursiveRender(accInit, idCategoria, arrCategorias);
+                var next = 0;
+                var idCategoria = jIni[i].idCategoria;
+                that.recursiveRender(accInit, idCategoria, arrCategorias);
+                that.accorGaleria.append(accInit);
+            }            
 
-            that.accorGaleria.append(accInit);
             that.$el.foundation();
             /*
             for (var i = 0; i < json.length; i++) {
