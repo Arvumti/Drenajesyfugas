@@ -177,7 +177,7 @@ if(isset($idCliente) && isset($idReporte)) {
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<div class="encabezado_texto encabezado_largo">
 								<!--<h1>Reportes</h1>-->
-								<span><h5 class="16px">Listado de los servicios prestados a su empresa...</h5></span>
+								<span><h5 class="16px">Listado de los servicios prestados a su empresa</h5></span>
 
 							    <!-- <h5 class="16px"><b>Páginas de reportes..</b></h5> -->
 
@@ -248,7 +248,7 @@ if(isset($idCliente) && isset($idReporte)) {
 				<div class="row">
 					<div class="small-12 columns">
 			            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 reporte_img">
-							<h3>Imagenes</h3>
+							<!--<h3>Imagenes</h3>-->
 							<ul class="galeria_sencilla nav-inside">
                         		{{#imagenes}}
 								<li>
