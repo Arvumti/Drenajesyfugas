@@ -247,7 +247,6 @@ if(isset($idCliente) && isset($idReporte)) {
 				<div class="row">
 					<div class="small-12 columns">
 			            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 reporte_img">
-							<h3>Imagenes</h3>
 							<ul class="galeria_sencilla nav-inside">
                         		{{#imagenes}}
 								<li>
