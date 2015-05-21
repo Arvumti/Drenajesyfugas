@@ -32,7 +32,7 @@ if(isset($idCliente) && isset($idReporte)) {
 
 		$imagenes = GetInfoAdmin(Array('opcion' => 5), Array('idReporte' => $reporte[$i]['idReporte']));
 
-		$imagenes_html = '';
+		/*$imagenes_html = '';
 		if(count($imagenes) > 0) {
 			$imagenes_html = '<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 reporte_img">
 									<ul class="galeria_sencilla nav-inside">';
@@ -43,7 +43,7 @@ if(isset($idCliente) && isset($idReporte)) {
 			}
 			$imagenes_html .= '		</ul> 
 								</div>';
-		}
+		}*/
 
 		$video = '';
 		if(strlen($reporte[$i]['video']) > 0) {
@@ -64,16 +64,18 @@ if(isset($idCliente) && isset($idReporte)) {
 				$pumbometro = ' <p>Plumbómetro:<i class="icon-thermometer red"></i> </p>';
 				break;
 		}
-
-		$imagenes_html = '<div class="row">
-							<div class="small-12 columns">
-								<h2>Galeria de imagenes</h2>
-							</div>
-							<div class="small-12 columns">
-								<dl class="accor-galeria accordion" data-accordion>
-								</dl>
-							</div>
-						</div>';
+		
+		$imagenes_html = '';
+		if(count($imagenes) > 0)
+			$imagenes_html = '<div class="row">
+								<div class="small-12 columns">
+									<h2>Galeria de imagenes</h2>
+								</div>
+								<div class="small-12 columns">
+									<dl class="accor-galeria accordion" data-accordion>
+									</dl>
+								</div>
+							</div>';
 
 	  	$reporte_html .= '<p>Folio: '.$reporte[$i]['idReporte'].'</p>
 	  					  <p>Tipo de servicio: '.$reporte[$i]['tipo'].'</p>
@@ -129,16 +131,6 @@ if(isset($idCliente) && isset($idReporte)) {
   <link rel="apple-touch-icon" sizes="72x72" href="placeholders/ico/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="placeholders/ico/apple-touch-icon-114x114.png">
   <link rel="apple-touch-icon" sizes="144x144" href="placeholders/ico/apple-touch-icon-144x144.png">
-  <script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	ga('create', 'UA-46810500-1', 'auto');
-	ga('send', 'pageview');
-
-  </script>
 </head>
 
 	<body>
@@ -250,7 +242,7 @@ if(isset($idCliente) && isset($idReporte)) {
 							<ul class="galeria_sencilla nav-inside">
                         		{{#imagenes}}
 								<li>
-									<a href="{{direccion}}" class="prettyPhoto" data-rel="prettyPhoto[gallery-reporte{{idReporte}}]">
+									<a class="prettyPhoto" data-rel="prettyPhoto[gallery-reporte{{idReporte}}]">
 										<img src="{{direccion}}">
 									</a>
 								</li>
