@@ -391,10 +391,9 @@ header {
 	z-index: 42;
 	position: relative;	
 	margin: 0 auto;
-    padding: 40px 0;
+    padding: 20px 0;
     width: 100%;
 	background:#002f73;
-	padding: 0;
 	border-bottom: 1px solid #ececec;
 	border-top: 1px solid #ececec;
 	box-shadow:0 3px 2px 0 rgba(0,0,0,.03);
@@ -432,15 +431,20 @@ header .logo {
 }
 header .logo img {
 	width: 80%;
-		margin-top: 15px;
+	margin-top: 33px;
+
 
 }
 .barra_superior {
     padding: 0;
-	line-height:38px;
-	background-color:#fffa00;
-	font-size: 14px;
-    font-weight: bold;
+  line-height: 38px;
+  background-color: #fffa00;
+  font-size: 14px;
+  font-weight: bold;
+  position: fixed;
+  z-index: 1043;
+  width: 100%;
+
 	}
 .barra_superior .t-izquierdo {
 	float:left;
@@ -448,9 +452,14 @@ header .logo img {
 .barra_superior .t-izquierdo span {
 	margin-right:15px;
 	}
+	.barra_superior .t-izquierdo span a{
+	margin-right:15px;
+	font-size:18px;
+
+	}
 .barra_superior i {
 	margin-right:5px;
-	font-size:14px;
+	font-size:18px;
 	}
 .barra_superior .t-derecho {
 	float:right;
@@ -1885,6 +1894,8 @@ footer .widget_recent_post li a span {
 	
 	.margen_slide{
 		margin-left: 13%;
+		  margin-top: 2em;
+
 	}
 	
 /*==========================================================

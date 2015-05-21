@@ -40,7 +40,7 @@ if (isset($_POST['usuario'], $_POST['password'])) {
 
         <!--modal login caja clases del modal en bootstrap-->
                <div class="modal fade" id="login_caja">
-                  <div class="modal-dialog">
+                  <div class="modal-dialog" style="z-index:-1">
                     <div class="modal-content">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
