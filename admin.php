@@ -442,7 +442,7 @@ $user = $user ? $user : 'Admin';
                 <section class="pop-foot row">
                     <div class="small-12 columns">
                         <br />
-                        <button type="button" class="button small success btnUpload">Cargar</button>
+                        <!--<button type="button" class="button small success btnUpload">Cargar</button>-->
                         <button type="button" class="button small alert btnCancelar">Salir</button>
                     </div>
                 </section>
