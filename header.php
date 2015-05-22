@@ -57,7 +57,7 @@ if (isset($_POST['usuario'], $_POST['password'])) {
                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         		<p>
                                 <label for="clave"> Clave:</label>
-                                <input id="clave" type="password" aria-required="true" size="25" value="" name="password">
+                                <input id="clave" type="password" aria-required="true" size="20" value="" name="password">
                             	</p>
                         </div>
                       </div>
