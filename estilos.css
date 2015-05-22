@@ -389,7 +389,7 @@ header {
 }
 .contenedor_navegacion {
 	z-index: 42;
-	position: relative;	
+	position: fixed;	
 	margin: 0 auto;
     padding: 20px 0;
     width: 100%;
@@ -1894,7 +1894,7 @@ footer .widget_recent_post li a span {
 	
 	.margen_slide{
 		margin-left: 13%;
-		  margin-top: 2em;
+		  margin-top: 9em;
 
 	}
 	

@@ -72,7 +72,7 @@ if (isset($_POST['usuario'], $_POST['password'])) {
         </div>
     </div>
     </section>
-         <div class="contenedor_navegacion stickmenu clearfix">
+         <div class="contenedor_navegacion ">
           <div class="logo"><a href="index.php">
                 <img src="img/azul.png"/> 
                </a>
