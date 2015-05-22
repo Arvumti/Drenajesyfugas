@@ -72,7 +72,7 @@
            <div class="p-item">
              <div class="pthumb">
                 <div class="mascara">
-                  <h3><a href="port-single.html">Residencial</a></h3>  
+                  <h3>Residencial</h3>  
                   <a href="img/servicios/1.png" class="prettyPhoto"><i class="fa fa-search zoom"></i></a>
                   <span class="glass"></span>   
                 </div>
@@ -91,7 +91,7 @@
                 <div class="p-item">
                     <div class="pthumb">
                         <div class="mascara">
-                            <h3><a href="port-single.html">Comercial</a></h3>
+                            <h3>Comercial</h3>
                         <a href="img/servicios/2.png" class="prettyPhoto"><i class="fa fa-search zoom"></i></a>
                             <span class="glass"></span>   
                       </div>
@@ -110,7 +110,7 @@
                 <div class="p-item">
                     <div class="pthumb">
                         <div class="mascara">
-                            <h3><a href="port-single.html">Industrial </a></h3>
+                            <h3>Industrial</h3>
                         <a href="img/servicios/3.png" class="prettyPhoto"><i class="fa fa-search zoom"></i></a>
                             <span class="glass"></span>   
                       </div>
@@ -129,7 +129,7 @@
                 <div class="p-item">
                     <div class="pthumb">
                         <div class="mascara">
-                            <h3><a href="port-single.html">Desazolve</a></h3>
+                            <h3>Desazolve</h3>
                             <a href="img/servicios/4.png" class="prettyPhoto"><i class="fa fa-search zoom"></i></a>
                             <span class="glass"></span>   
                       </div>
@@ -146,7 +146,7 @@
                 <div class="p-item">
                     <div class="pthumb">
                         <div class="mascara">
-                            <h3><a href="port-single.html">Destape de drenaje</a></h3>
+                            <h3>Destape de drenaje</h3>
                         <a href="img/servicios/6.png" class="prettyPhoto"><i class="fa fa-search zoom"></i></a>
                          <span class="glass"></span>   
                       </div>
@@ -165,7 +165,7 @@
                 <div class="p-item">
                     <div class="pthumb">
                         <div class="mascara">
-                            <h3><a href="port-single.html">Inspección de drenaje</a></h3>
+                            <h3>Inspección de drenaje</h3>
                         <a href="img/servicios/5.png" class="prettyPhoto"><i class="fa fa-search zoom"></i></a>
                          <span class="glass"></span>   
                       </div>
@@ -184,7 +184,7 @@
                 <div class="p-item">
                     <div class="pthumb">
                         <div class="mascara">
-                            <h3><a href="port-single.html">Desagüe</a></h3>
+                            <h3>Desagüe</h3>
                         <a href="img/servicios/7.png" class="prettyPhoto"><i class="fa fa-search zoom"></i></a>
                          <span class="glass"></span>   
                       </div>
@@ -203,7 +203,7 @@
                 <div class="p-item">
                     <div class="pthumb">
                         <div class="mascara">
-                            <h3><a href="port-single.html">Polizas</a></h3>
+                            <h3>Polizas</h3>
                         <a href="img/servicios/8.png" class="prettyPhoto"><i class="fa fa-search zoom"></i></a>
                             <span class="glass"></span>   
                       </div>
@@ -222,7 +222,7 @@
                 <div class="p-item">
                     <div class="pthumb">
                         <div class="mascara">
-                            <h3><a href="port-single.html">Descontaminación</a></h3>
+                            <h3>Descontaminación</h3>
                         <a href="img/servicios/9.png" class="prettyPhoto"><i class="fa fa-search zoom"></i></a>
                             <span class="glass"></span>   
                       </div>
@@ -241,7 +241,7 @@
                 <div class="p-item">
                     <div class="pthumb">
                         <div class="mascara">
-                            <h3><a href="port-single.html">Destape y limpieza</a></h3>
+                            <h3>Destape y limpieza</h3>
                         <a href="img/servicios/10.png" class="prettyPhoto"><i class="fa fa-search zoom"></i></a>
                             <span class="glass"></span>   
                       </div>
@@ -260,7 +260,7 @@
                 <div class="p-item">
                     <div class="pthumb">
                         <div class="mascara">
-                            <h3><a href="port-single.html">Desincrustación de tubería</a></h3>
+                            <h3>Desincrustación de tubería</h3>
                         <a href="img/servicios/11.png" class="prettyPhoto"><i class="fa fa-search zoom"></i></a>
                             <span class="glass"></span>   
                       </div>
@@ -268,7 +268,7 @@
                   </div>
                   <div class="port-meta">
                         <span class="triangle"></span>
-                            <h3><a href="port-single.html">Desincrustación</a></h3>
+                            <h3>Desincrustación</h3>
                             <div class="cat"><a href="#">Liberamos toda clase de tuberías</a></div>
                   </div>
                 </div>
@@ -279,7 +279,7 @@
                 <div class="p-item">
                     <div class="pthumb">
                         <div class="mascara">
-                            <h3><a href="port-single.html">Dezasolve</a></h3>
+                            <h3>Dezasolve</h3>
                         <a href="img/servicios/12.png" class="prettyPhoto"><i class="fa fa-search zoom"></i></a>
                             <span class="glass"></span>   
                       </div>

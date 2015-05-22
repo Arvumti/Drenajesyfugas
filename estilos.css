@@ -394,7 +394,7 @@ header {
     padding: 20px 0;
     width: 100%;
 	background:#002f73;
-	border-bottom: 1px solid #ececec;
+	/*border-bottom: 1px solid #ececec;*/
 	border-top: 1px solid #ececec;
 	box-shadow:0 3px 2px 0 rgba(0,0,0,.03);
 	min-height:67px;
