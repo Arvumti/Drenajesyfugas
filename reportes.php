@@ -113,7 +113,7 @@ if(isset($idCliente) && isset($idReporte)) {
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	
 	<link href="estilos.css" rel="stylesheet">
-	<!--<link rel="stylesheet" type="text/css" href="css/foundation.min.css">-->
+	<link rel="stylesheet" type="text/css" href="css/foundation.min_reportes.css">
 	<link href="css/custom.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/theme-options.css" media="all">
