@@ -397,7 +397,7 @@ header {
 	/*border-bottom: 1px solid #ececec;*/
 	border-top: 1px solid #ececec;
 	box-shadow:0 3px 2px 0 rgba(0,0,0,.03);
-	min-height:67px;
+	min-height:120px;
 }
 
 .sticky {
@@ -430,7 +430,7 @@ header .logo {
 
 }
 header .logo img {
-	width: 80%;
+	width: 100%;
 	margin-top: 33px;
 
 
@@ -1894,7 +1894,7 @@ footer .widget_recent_post li a span {
 	
 	.margen_slide{
 		margin-left: 13%;
-		  margin-top: 9em;
+		  margin-top: 10em;
 
 	}
 	
