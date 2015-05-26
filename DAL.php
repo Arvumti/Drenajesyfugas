@@ -48,7 +48,8 @@ function GetInfoAdmin($options, $data) {
 			break;
 		case 5://Obtiene la informacion de los posts
 			$consulta = '   SELECT 	a.idCategoria, a.nombre, a.tipo, a.idPadre,
-									b.idReporteImagen, b.direccion, b.alias
+									b.idReporteImagen, b.direccion, b.alias,
+									a.comentarios
 							FROM categorias a
 							LEFT JOIN reportes_imagenes b
 							ON a.idCategoria = b.idCategoria
@@ -89,7 +90,8 @@ function GetInfo($options, $data) {
 			break;
 		case 5://Obtiene la informacion de los posts
 			$consulta = '   SELECT 	a.idCategoria, a.nombre, a.tipo, a.idPadre,
-									b.idReporteImagen, b.direccion, b.alias
+									b.idReporteImagen, b.direccion, b.alias,
+									a.comentarios
 							FROM categorias a
 							LEFT JOIN reportes_imagenes b
 							ON a.idCategoria = b.idCategoria
@@ -169,6 +171,14 @@ function SaveInfo($options, $data) {//Inserta la informacion de la reportes
 								SET texto = "'.$data['texto'].'", titulo = "'.$data['titulo'].'", 
 									link = "'.$data['link'].'", video = "'.$data['video'].'", fecha = "'.$data['fecha'].'"
 								WHERE idPost = "'.$data['idPost'].'"'; 
+				break;
+            case 5://Modifica la informacion de  las categorias
+				$idPadre = '"'.$data['idPadre'].'"';
+				if($data['idPadre'] == "0" || $data['idPadre'] == 0)
+					$idPadre = '(NULL)';
+				$consulta = '   UPDATE categorias  
+								SET comentarios = "'.$data['comentarios'].'"
+								WHERE idCategoria = "'.$data['idCategoria'].'";'; 
 				break;
             default:
                 $consulta = 'SELECT 2;';

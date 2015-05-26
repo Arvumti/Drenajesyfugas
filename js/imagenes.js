@@ -43,6 +43,7 @@ var ViPopGaleria = Backbone.View.extend({
                     nombre: grCategorias[key][0].nombre,
                     tipo: grCategorias[key][0].tipo,
                     idPadre: grCategorias[key][0].idPadre,
+                    comentarios: grCategorias[key][0].comentarios,
                     imagenes: grCategorias[key],
                 };
 

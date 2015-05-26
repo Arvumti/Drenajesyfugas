@@ -232,7 +232,6 @@ var ViPopSave = Backbone.View.extend({
         	app.ut.post({url:'DAL.php', done:done, type:'json', data:{options:jdata, data:json}});
 
         function done (data) {
-        	debugger
             if(data.data.err) {
                 alert('Error: ' + data.data.err)
             }
@@ -377,6 +376,7 @@ var ViPopGaleria = Backbone.View.extend({
 
         this.events['click .btnAddCategoria'] = 'add_categoria';
         this.events['click .btnAddSubCategoria'] = 'add_subcategoria';
+        this.events['click .btnComentarCategoria'] = 'add_comentar';
         this.events['click .accordion-navigation > a'] = 'click_accordeon';
         this.events['change .file-galeria'] = 'change_images';
     },
@@ -414,7 +414,6 @@ var ViPopGaleria = Backbone.View.extend({
         app.ut.post({url:'DAL.php', done:done, type:'json', data:{options:{opcion:this.dal_opc, mod:10}, data:{idReporte:this.idReporte}}});
 
         function done(data) {
-            debugger
             if(init)
                 that.$el.foundation('reveal', 'open');
 
@@ -427,13 +426,13 @@ var ViPopGaleria = Backbone.View.extend({
                     nombre: grCategorias[key][0].nombre,
                     tipo: grCategorias[key][0].tipo,
                     idPadre: grCategorias[key][0].idPadre,
+                    comentarios: grCategorias[key][0].comentarios,
                     imagenes: grCategorias[key],
                 };
 
                 arrCategorias.push(currCategoria);
             }
 
-            debugger
             var jIni = _.where(arrCategorias, {tipo:'1'});
             if(jIni.length == 0)
                 return;
@@ -486,7 +485,6 @@ var ViPopGaleria = Backbone.View.extend({
     click_delete_categoria: function(e) {
         e.preventDefault();
         e.stopPropagation();
-        debugger
 
         var that = this,
             elem = $(e.currentTarget),
@@ -494,7 +492,6 @@ var ViPopGaleria = Backbone.View.extend({
         app.ut.post({url:'DAL.php', done:done, type:'json', data:{options:{opcion:that.dal_opc, crud:3, mod:1}, data:{idCategoria:idCategoria}}});
 
         function done (data) {
-            debugger
             if(data.data.err)
                 alert('Error: ' + data.data.err)
             else {
@@ -509,7 +506,6 @@ var ViPopGaleria = Backbone.View.extend({
         var that = this;
         var idCategoria = elem.data('idcategoria');
         var jdata = {opcion:this.dal_opc_up, crud:1, mod:1};
-        debugger
         
         lShow();
         var formData = new FormData(form[0]);
@@ -556,7 +552,6 @@ var ViPopGaleria = Backbone.View.extend({
         }
 
         function done (data) {
-            debugger
             if(data.errors && data.errors.length > 0){
                 var errores = data.errors.join(', ');
                 alert(errores);
@@ -572,6 +567,26 @@ var ViPopGaleria = Backbone.View.extend({
             form[0].reset();
         }
     },
+    add_comentar: function(e) {
+        debugger
+        var that = this;
+
+        var elem = $(e.currentTarget);
+        var id = elem.data('idcategoria');
+        var parent = elem.parents('#cat' + id);
+        var txa = parent.find('.txa-' + id);
+
+        var json = {
+            comentarios: txa.val(),
+            idCategoria: id,
+        };
+
+        app.ut.post({url:'DAL.php', done:done, type:'json', data:{options:{opcion:this.dal_opc, crud:2, mod:1}, data:json}});
+
+        function done(data) {
+            alert('Comentario guardado');
+        }
+    },
     add_categoria: function(e) {
         var nombre = $(e.currentTarget).closest('.row').find('input').val();
         var json = {
@@ -585,7 +600,6 @@ var ViPopGaleria = Backbone.View.extend({
         this.saveCategorias(json, this.accorGaleria);
     },
     add_subcategoria: function(e) {
-        debugger
         var nombre = $(e.currentTarget).closest('.row').find('input:text').val();
         var content = $(e.currentTarget).closest('.content');
         var subGaleria = content.children('.row').children('.columns').children('.accor-subgaleria');
@@ -620,7 +634,6 @@ var ViPopGaleria = Backbone.View.extend({
     click_btnUpload: function() {
     	var that = this;
         var jdata = {opcion:this.dal_opc_up, crud:1, mod:1};
-        debugger
         
 		lShow();
 		var formData = new FormData(this.form[0]);
@@ -667,7 +680,6 @@ var ViPopGaleria = Backbone.View.extend({
 		}
 
         function done (data) {
-        	debugger
             if(data.errors && data.errors.length > 0){
                 var errores = data.errors.join(', ');
                 alert(errores);

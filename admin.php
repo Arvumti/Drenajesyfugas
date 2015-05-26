@@ -260,6 +260,18 @@ $user = $user ? $user : 'Admin';
 				<a href="#cat{{idCategoria}}"><i class="fa fa-times" data-idcategoria="{{idCategoria}}"></i> {{nombre}}</a>
 				<div id="cat{{idCategoria}}" data-idcategoria="{{idCategoria}}" class="content">
 					<div class="row">
+						<div class="small-10 columns">
+							<label>
+								Comentarios:
+								<textarea class="txa-{{idCategoria}}" placeholder="Comentarios...">{{comentarios}}</textarea>
+							</label>
+                        </div>
+                        <div class="small-2 columns">
+							<label>
+								&nbsp;
+								<button type="button" data-idcategoria="{{idCategoria}}" class="button tiny success expand btnComentarCategoria">Guardar Comentario</button>
+							</label>
+                        </div>
 						<div class="small-12 columns">
                             <table class="table table-custom gv-images-categorias">
                                 <thead>

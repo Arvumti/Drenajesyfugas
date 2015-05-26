@@ -238,6 +238,12 @@ if(isset($idCliente) && isset($idReporte)) {
 			<div id="cat{{idCategoria}}" data-idcategoria="{{idCategoria}}" class="content">
 				<div class="row">
 					<div class="small-12 columns">
+						{{#if comentarios}}
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+							<strong>Comentarios:</strong>
+							{{comentarios}}
+						</div>
+						{{/if}}
 			            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 reporte_img">
 							<ul class="galeria_sencilla nav-inside">
                         		{{#imagenes}}
