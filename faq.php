@@ -69,7 +69,7 @@ include('header.php');
             		<div class="row clearfix">
                   	<div class="col-lg-12">
                       	<h1>F.A.Q.</h1>
-                         <p>Aenean nisl orci lorem, condiment ultrices consequat eu lorem ipsum dolor Mustache cliche tempor, williamsburg carles vegan helvetica Cosby sweater eu banh mi, qui irure terry richardson ex squid. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p> <br><br>  
+                         <p>Encuentra aquí dudas y preguntas que frecuentemente tienen nuestros clientes.</p> <br><br>  
                       </div>
                  	</div>
                     
@@ -116,42 +116,38 @@ include('header.php');
                             <div class="panel_encabezado">
                               <h4 class="panel_titulo">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne2">
-                                  Que pasa si se tapa?
+                                  En mi domicilio se perciben malos olores, somos una empresa en Apodaca, y lo olores son fuertes en los baños de oficinas. ¿pueden enviar alguien a revisar?
                                 </a><i class="indicator fa fa-angle-up"></i>
                               </h4>
                             </div>
                             <div id="collapseOne2" class="panel-collapse collapse">
                               <div class="panel-body">
-                                Turpis venenatis at laoreet. Etiam lorem minim sed metus cras posuere pede velit neque egestas sapien conseto actetuer, ac etiam amet ipsum dolor amet cras posuere pede placerat, velit neque felisios dolor ipsum nulla.Dolor ut mollis elit et vestibulum mattis integer. Amet cras posuere pede placerat, velit neque ut mollis.
-                              </div>
+                        Los olores pueden generarse por diferentes situaciones, y en todo caso, se recomienda primero realizar un desazolve con presión de agua en la línea principal de drenaje. Entraremos en contacto con usted al teléfono que nos proporcionó para agendar una cita y cotizar el servicio.                              </div>
                             </div>
                           </div>
                           <div class="panel panel_df">
                             <div class="panel_encabezado">
                               <h4 class="panel_titulo">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo2">
-                                   Que pasa si se tapa?
+                                   Tengo unos migitorios tapados y ya huele muy mal, estamos en Santa Catarina
                                 </a><i class="indicator fa fa-angle-up"></i>
                               </h4>
                             </div>
                             <div id="collapseTwo2" class="panel-collapse collapse">
                               <div class="panel-body">
-                                Turpis venenatis at laoreet. Etiam lorem minim sed metus cras posuere pede velit neque egestas sapien conseto actetuer, ac etiam amet ipsum dolor amet cras posuere pede placerat, velit neque felisios dolor ipsum nulla.Dolor ut mollis elit et vestibulum mattis integer. Amet cras posuere pede placerat, velit neque ut mollis. 
-                              </div>
+                        Buen día, antes de enviar gente o cotizar algún servicio, ¿podrá indicarnos con qué frecuencia realizan el mantenimiento en la línea de drenaje de dichos mingitorios?                              </div>
                             </div>
                           </div>
                           <div class="panel panel_df">
                             <div class="panel_encabezado">
                               <h4 class="panel_titulo">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree2">
-                                  Que pasa si se tapa?
-                                </a><i class="indicator fa fa-angle-up"></i>
+                        Nunca se ha hecho eso. Pero el problema es en un tramo como de unos 5 mts cuando mucho.                                </a><i class="indicator fa fa-angle-up"></i>
                               </h4>
                             </div>
                             <div id="collapseThree2" class="panel-collapse collapse">
                               <div class="panel-body">
-                                Turpis venenatis at laoreet. Etiam lorem minim sed metus cras posuere pede velit neque egestas sapien conseto actetuer, ac etiam amet ipsum dolor amet cras posuere pede placerat, velit neque felisios dolor ipsum nulla.Dolor ut mollis elit et vestibulum mattis integer. Amet cras posuere pede placerat, velit neque ut mollis.
-                              </div>
+                        Buen día, la longitud del problema no es lo que nos preocupa, sino la frecuencia con que se mantiene el drenaje en óptimas condiciones, ya que el drenaje es como las arterias del corazón - que se saturan de grasa y colesterol - sólo que en este caso, nosotros le llamamos “azolve” a esa grasa y colesterol. La recomendación, es realizar un servicio preventivo cada cierto período de tiempo, con el fin de evitar problemas futuros como el que presenta actualmente. Entraremos en contacto con usted vía telefónica para programar la visita de un técnico.                              </div>
                             </div>
                           </div>
                           
@@ -160,14 +156,13 @@ include('header.php');
                             <div class="panel_encabezado">
                               <h4 class="panel_titulo">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour2">
-                                  Que pasa si se tapa?
-                                </a><i class="indicator fa fa-angle-up"></i>
+Buen día, tengo problemas con el drenaje de mi casa, han venido 5 personas diferentes a destaparlo y las mismas veces vuelve a presentarse el problema.                                </a><i class="indicator fa fa-angle-up"></i>
                               </h4>
                             </div>
                             <div id="collapseFour2" class="panel-collapse collapse">
                               <div class="panel-body">
-                                Turpis venenatis at laoreet. Etiam lorem minim sed metus cras posuere pede velit neque egestas sapien conseto actetuer, ac etiam amet ipsum dolor amet cras posuere pede placerat, velit neque felisios dolor ipsum nulla.Dolor ut mollis elit et vestibulum mattis integer. Amet cras posuere pede placerat, velit neque ut mollis.
-                              </div>
+uen día, tengo una serie de preguntas para usted, antes de emitir alguna recomendación
+1) ¿sabe usted qué equipo usaron las personas en cada servicio?, 2) ¿cuánto tiempo duró el drenaje destapado en cada ocasión?, 3) ¿ha tenido remodelaciones recientes en su domicilio?, 4) ¿tiene árboles plantados dentro de su terreno?, 5) ¿alguna vez ha realizado mantenimiento preventivo en su drenaje?                              </div>
                             </div>
                           </div>
                           
@@ -176,122 +171,19 @@ include('header.php');
                             <div class="panel_encabezado">
                               <h4 class="panel_titulo">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                                Que pasa si se tapa?
-                                </a><i class="indicator fa fa-angle-up"></i>
+Hola, 1) las personas que han venido traen una máquina que meten al drenaje y destapa sin romper. 2) por lo regular dura 2 semanas funcionando bien y luego vuelven los problemas. 3) no he tenido remodelaciones desde que compré la casa hace 5 años. 4) no tengo árboles y no sabía que había que hacerle algo al drenaje.                                </a><i class="indicator fa fa-angle-up"></i>
                               </h4>
                             </div>
                             <div id="collapse3" class="panel-collapse collapse">
                               <div class="panel-body">
-                                Turpis venenatis at laoreet. Etiam lorem minim sed metus cras posuere pede velit neque egestas sapien conseto actetuer, ac etiam amet ipsum dolor amet cras posuere pede placerat, velit neque felisios dolor ipsum nulla.Dolor ut mollis elit et vestibulum mattis integer. Amet cras posuere pede placerat, velit neque ut mollis.
-                              </div>
+Buen día, si en esos 5 años no han habido remodelaciones, no tiene árboles de ningún tipo plantados en su domicilio y nunca ha realizado un mantenimiento preventivo en su drenaje. Entonces, casi le puedo asegurar que su drenaje está azolvado con: arena, tierra, lodo, grasa, pelo de mascota u hojas de árbol, entre otros. Y la recomendación en su caso, es desazolvarlo con presión de agua. Entraremos en contacto con usted para cotizar y agendar una cita.                              </div>
                             </div>
                           </div>
                           
-                          <div class="panel panel_df">
-                            <div class="panel_encabezado">
-                              <h4 class="panel_titulo">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                              Que pasa si se tapa?
-                                </a><i class="indicator fa fa-angle-up"></i>
-                              </h4>
-                            </div>
-                            <div id="collapse4" class="panel-collapse collapse">
-                              <div class="panel-body">
-                                Turpis venenatis at laoreet. Etiam lorem minim sed metus cras posuere pede velit neque egestas sapien conseto actetuer, ac etiam amet ipsum dolor amet cras posuere pede placerat, velit neque felisios dolor ipsum nulla.Dolor ut mollis elit et vestibulum mattis integer. Amet cras posuere pede placerat, velit neque ut mollis.
-                              </div>
-                            </div>
-                          </div>
+                        
+                                       
                           
-                          <div class="panel panel_df">
-                            <div class="panel_encabezado">
-                              <h4 class="panel_titulo">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
-                              Que pasa si se tapa?
-                                </a><i class="indicator fa fa-angle-up"></i>
-                              </h4>
-                            </div>
-                            <div id="collapse5" class="panel-collapse collapse">
-                              <div class="panel-body">
-                                Turpis venenatis at laoreet. Etiam lorem minim sed metus cras posuere pede velit neque egestas sapien conseto actetuer, ac etiam amet ipsum dolor amet cras posuere pede placerat, velit neque felisios dolor ipsum nulla.Dolor ut mollis elit et vestibulum mattis integer. Amet cras posuere pede placerat, velit neque ut mollis.
-                              </div>
-                            </div>
-                          </div>
-                          
-                          <div class="panel panel_df">
-                            <div class="panel_encabezado">
-                              <h4 class="panel_titulo">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse6">
-                                 Que pasa si se tapa?
-                                </a><i class="indicator fa fa-angle-up"></i>
-                              </h4>
-                            </div>
-                            <div id="collapse6" class="panel-collapse collapse">
-                              <div class="panel-body">
-                                Turpis venenatis at laoreet. Etiam lorem minim sed metus cras posuere pede velit neque egestas sapien conseto actetuer, ac etiam amet ipsum dolor amet cras posuere pede placerat, velit neque felisios dolor ipsum nulla.Dolor ut mollis elit et vestibulum mattis integer. Amet cras posuere pede placerat, velit neque ut mollis.
-                              </div>
-                            </div>
-                          </div>
-                          
-                          <div class="panel panel_df">
-                            <div class="panel_encabezado">
-                              <h4 class="panel_titulo">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse7">
-                             Que pasa si se tapa?
-                                </a><i class="indicator fa fa-angle-up"></i>
-                              </h4>
-                            </div>
-                            <div id="collapse7" class="panel-collapse collapse">
-                              <div class="panel-body">
-                                Turpis venenatis at laoreet. Etiam lorem minim sed metus cras posuere pede velit neque egestas sapien conseto actetuer, ac etiam amet ipsum dolor amet cras posuere pede placerat, velit neque felisios dolor ipsum nulla.Dolor ut mollis elit et vestibulum mattis integer. Amet cras posuere pede placerat, velit neque ut mollis.
-                              </div>
-                            </div>
-                          </div>
-                          
-                          <div class="panel panel_df">
-                            <div class="panel_encabezado">
-                              <h4 class="panel_titulo">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse8">
-                                Que pasa si se tapa?
-                                </a><i class="indicator fa fa-angle-up"></i>
-                              </h4>
-                            </div>
-                            <div id="collapse8" class="panel-collapse collapse">
-                              <div class="panel-body">
-                                Turpis venenatis at laoreet. Etiam lorem minim sed metus cras posuere pede velit neque egestas sapien conseto actetuer, ac etiam amet ipsum dolor amet cras posuere pede placerat, velit neque felisios dolor ipsum nulla.Dolor ut mollis elit et vestibulum mattis integer. Amet cras posuere pede placerat, velit neque ut mollis.
-                              </div>
-                            </div>
-                          </div>
-                          
-                          <div class="panel panel_df">
-                            <div class="panel_encabezado">
-                              <h4 class="panel_titulo">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse9">
-                               Que pasa si se tapa?
-                                </a><i class="indicator fa fa-angle-up"></i>
-                              </h4>
-                            </div>
-                            <div id="collapse9" class="panel-collapse collapse">
-                              <div class="panel-body">
-                                Turpis venenatis at laoreet. Etiam lorem minim sed metus cras posuere pede velit neque egestas sapien conseto actetuer, ac etiam amet ipsum dolor amet cras posuere pede placerat, velit neque felisios dolor ipsum nulla.Dolor ut mollis elit et vestibulum mattis integer. Amet cras posuere pede placerat, velit neque ut mollis.
-                              </div>
-                            </div>
-                          </div>
-                          
-                          <div class="panel panel_df">
-                            <div class="panel_encabezado">
-                              <h4 class="panel_titulo">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse10">
-                                Que pasa si se tapa?
-                                </a><i class="indicator fa fa-angle-up"></i>
-                              </h4>
-                            </div>
-                            <div id="collapse10" class="panel-collapse collapse">
-                              <div class="panel-body">
-                                Turpis venenatis at laoreet. Etiam lorem minim sed metus cras posuere pede velit neque egestas sapien conseto actetuer, ac etiam amet ipsum dolor amet cras posuere pede placerat, velit neque felisios dolor ipsum nulla.Dolor ut mollis elit et vestibulum mattis integer. Amet cras posuere pede placerat, velit neque ut mollis.
-                              </div>
-                            </div>
-                          </div>
-                          
+                                 
                           
                           
                         </div>

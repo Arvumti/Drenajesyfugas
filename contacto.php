@@ -72,7 +72,7 @@ include('header.php');
                                  <input type="email" class="valid" name="email" id="email" value="">
                               </p>
                               <p class="input-block end">   
-                                 <label class="required" for="telefono">Teléfono<span>*</span></label>                                                            
+                                 <label class="required" for="telefono">Teléfono</label>                                                            
                                  <input type="text" id="telefono" name="telefono">
                               </p>   
                               <p class="textarea-block">                        
@@ -80,7 +80,7 @@ include('header.php');
                                     <textarea rows="6" cols="40" id="mensaje" name="mensaje"></textarea>
                               </p>
                               <p>                    
-                                  <button class="btn btn-violet btn-lg btn-block" type="submit" id="btnEnviar"  value="Enviar"> Enviar </button>
+                                  <button class="btn btn-violet btn-lg btn-block" type="submit" id="btnEnviar"  value="submit"> Enviar </button>
                               </p>      	
                             </form>
                             
