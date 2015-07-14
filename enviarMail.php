@@ -8,7 +8,7 @@ $titulo = 'Formulario de contacto';
 $header = 'From: ' . $email;
 $msjCorreo = "Nombre: $nombre\n E-Mail: $email\n Mensaje:\n $mensaje";
   
-if ($_POST['submit']) {
+if ($_POST['btnEnviar']) {
 if (mail($para, $titulo, $msjCorreo, $header)) {
 echo "<script language='javascript'>
 alert('Mensaje enviado, muchas gracias.');

@@ -80,7 +80,7 @@ include('header.php');
                                     <textarea rows="6" cols="40" id="mensaje" name="mensaje"></textarea>
                               </p>
                               <p>                    
-                                  <button class="btn btn-violet btn-lg btn-block" type="submit" id="btnEnviar"  value="submit"> Enviar </button>
+                                  <button class="btn btn-violet btn-lg btn-block" type="submit" id="btnEnviar" name="btnEnviar" value="submit"> Enviar </button>
                               </p>      	
                             </form>
                             
