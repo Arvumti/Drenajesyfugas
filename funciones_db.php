@@ -7,7 +7,7 @@ $pre = '';
 function get_con() {
     //$mysqli = new mysqli("arvumti.ipagemysql.com", "drenajes", "dr3n@j35", "db_drenajes");
     //$mysqli = new mysqli("localhost", "root", "toor", "db_drenajes");
-    $mysqli = new mysqli("69.163.35.215", "admin_uDrenajes", "hvyiz1RShX", "admin_dbDrenajes");
+    $mysqli = new mysqli("arvumti.ipagemysql.com", "u_drenajes", "dr3n@j35", "db_drenajes1");
     if ($mysqli->connect_errno) {
         return $mysqli->connect_erro;
     }
